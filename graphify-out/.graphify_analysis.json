@@ -1,0 +1,105 @@
+{
+  "communities": {
+    "0": [
+      "package_scripts",
+      "package_scripts_block_add",
+      "package_scripts_block_rename",
+      "package_scripts_build",
+      "package_scripts_check",
+      "package_scripts_deploy",
+      "package_scripts_deploy_assets",
+      "package_scripts_deploy_dry_run",
+      "package_scripts_deploy_section",
+      "package_scripts_dev",
+      "package_scripts_graphify"
+    ],
+    "1": [
+      "package",
+      "package_devdependencies",
+      "package_devdependencies_sass",
+      "package_name",
+      "package_private",
+      "package_type",
+      "package_version",
+      "ref_sass"
+    ],
+    "2": [
+      "src_scripts_utils_hostreactappready",
+      "src_scripts_utils_hostreactappready_hostreactappready"
+    ],
+    "3": [
+      "landing_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.18181818181818182,
+    "1": 0.25,
+    "2": 1.0,
+    "3": 1.0
+  },
+  "gods": [
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 11
+    },
+    {
+      "id": "package_scripts_block_add",
+      "label": "block:add",
+      "degree": 1
+    },
+    {
+      "id": "package_scripts_block_rename",
+      "label": "block:rename",
+      "degree": 1
+    },
+    {
+      "id": "package_scripts_build",
+      "label": "build",
+      "degree": 1
+    },
+    {
+      "id": "package_scripts_check",
+      "label": "check",
+      "degree": 1
+    },
+    {
+      "id": "package_scripts_deploy",
+      "label": "deploy",
+      "degree": 1
+    },
+    {
+      "id": "package_scripts_deploy_assets",
+      "label": "deploy:assets",
+      "degree": 1
+    },
+    {
+      "id": "package_scripts_deploy_dry_run",
+      "label": "deploy:dry-run",
+      "degree": 1
+    },
+    {
+      "id": "package_scripts_deploy_section",
+      "label": "deploy:section",
+      "degree": 1
+    },
+    {
+      "id": "package_scripts_dev",
+      "label": "dev",
+      "degree": 1
+    }
+  ],
+  "surprises": [],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `scripts` connect `scripts` to `package.json`?",
+      "why": "High betweenness centrality (0.595) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `block:add`, `block:rename`, `build` to the rest of the system?",
+      "why": "16 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}

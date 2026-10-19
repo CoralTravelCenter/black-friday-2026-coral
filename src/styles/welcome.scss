@@ -1,0 +1,18 @@
+.corallium {
+  padding-block: calc(48px / 2);
+  padding-inline: 16px;
+
+  @media (min-width: 993px) {
+    padding-inline: 0;
+    padding-block: calc(64px / 2);
+  }
+}
+
+.corallium-h2 {
+  color: var(--Text-color_Text_Dark, #000);
+  font-size: var(--font-font_Size_Heading_2, 32px);
+  font-style: normal;
+  margin: 0 0 16px 0;
+  font-weight: var(--font-font_Weight_Semibold, 600);
+  line-height: var(--font-font_Line_Height_Heading_2, 40px); /* 125% */
+}

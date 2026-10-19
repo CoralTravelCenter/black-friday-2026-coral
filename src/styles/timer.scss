@@ -1,0 +1,35 @@
+coral-timer {
+  --prime-color: #FDCE86;
+  --background-accent: transparent;
+  --text-black: #ffffff;
+
+  h2 {
+    font-size: 20px;
+    width: 100%;
+    margin: 0;
+    color: #ffffff;
+  }
+}
+
+coral-timer::part(countdown-block) {
+  margin: 0 auto;
+}
+
+coral-timer::part(countdown-block) {
+  background: transparent;
+}
+
+coral-timer::part(content) {
+  background: transparent;
+  padding-bottom: 0;
+}
+
+coral-timer::part(container) {
+  background: url("/timer-bg.jpg");
+  margin: 0;
+  flex-direction: column-reverse;
+}
+
+coral-timer::part(text-block) {
+  margin: 0;
+}
