@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "builderVersion": "3.0.0",
+  "project": "black-friday-2026-coral",
+  "site": "coral",
+  "folder": "black-friday-2026-coral",
+  "assetsPrefix": "landing-pages/black-friday-2026-coral",
+  "assetsDirectory": "@CMS/assets",
+  "blocks": [
+    {
+      "path": "welcome.html",
+      "sha256": "d942baf71a882f33f4bba86168fbc7eb7c02404838f56b8818e582723a187d00",
+      "size": 23626
+    },
+    {
+      "path": "timer.html",
+      "sha256": "8a5e26643423db9fb9d1b77b541c17430d80ea75b319df72ca17f1dcbe1db751",
+      "size": 978
+    },
+    {
+      "path": "text.html",
+      "sha256": "190d5e5c75e7444e0168b72fb3bd28437870fd0b0d63a873d90e80ae8436d9fa",
+      "size": 397
+    },
+    {
+      "path": "tooltip-orchestrator.html",
+      "sha256": "910c0da79b3f5dee37300a1c406b543519ca6500459c3b9be5df354c8a778991",
+      "size": 10610
+    },
+    {
+      "path": "promotions.html",
+      "sha256": "b2804c88151d2104f4de3a747ed3b3a56351c9be1ec65a9c1f0889dda8be6700",
+      "size": 29785
+    },
+    {
+      "path": "hotels.html",
+      "sha256": "0e302a4dacae1f458c5fa55fb3af21a1ef58e01b1fb805e1ef95df20a6e21a0e",
+      "size": 176
+    },
+    {
+      "path": "contacts.html",
+      "sha256": "e81be5d8d1b86ffae2baf072ff49aad2647d0a4d8835a03a5be55f18d00fa1a9",
+      "size": 246
+    }
+  ],
+  "assets": [
+    {
+      "path": "kv-d.webp",
+      "sha256": "4afef0b22a3842481879317a6c528dc173c7cf35d255ceaca90ad3370798be3b",
+      "size": 67652
+    },
+    {
+      "path": "kv-m.webp",
+      "sha256": "a741ab3b6b0cc06b3fd4fd18fed47d5f278176efa56d221d898aceaacff89cf4",
+      "size": 43480
+    },
+    {
+      "path": "promo-1-d.webp",
+      "sha256": "61cad613fc8edcb151f3e0ce5ac710a03ae807251b38e4a3197af4bf6e5e4a29",
+      "size": 20864
+    },
+    {
+      "path": "promo-1-m.webp",
+      "sha256": "1de10dfecaf6a5c31a3998d07d1c21c3e98ba6410481658d920a76171d931a96",
+      "size": 12860
+    },
+    {
+      "path": "promo-2-d.webp",
+      "sha256": "722e761ea94ee2dc4be00dcb5f5e1cff825f69004bfeca120357d45b4cd7e676",
+      "size": 27246
+    },
+    {
+      "path": "promo-2-m.webp",
+      "sha256": "ff5ddd3f43051aa1e1542b0f457d2cc528fc453f67c4dfc845b85803c3c67c58",
+      "size": 14100
+    },
+    {
+      "path": "promo-3-d.webp",
+      "sha256": "e72587afaea251f4b85503e5d3dfd8c9c5cd47dc9620014455f397b49a25768e",
+      "size": 38704
+    },
+    {
+      "path": "promo-3-m.webp",
+      "sha256": "775641a76498a39dc1581c1ac1a4bb00864769a6be147b33a21248e2cc704093",
+      "size": 24254
+    },
+    {
+      "path": "promo-4-d.webp",
+      "sha256": "3951ba452b124ca1f9caff69dbbfed91b6bac1d3672266722a1ad93fef4cffaf",
+      "size": 33454
+    },
+    {
+      "path": "promo-4-m.webp",
+      "sha256": "41e8f0653be8f2cd3580a11262365e5d645ebd75e3d1b3eadee00966d86e11cb",
+      "size": 29186
+    },
+    {
+      "path": "promo-5-d.webp",
+      "sha256": "fdb84889773efd79e0ced4bc725451b4ecb9c2aed5425c0d7f24abd5ad895d6e",
+      "size": 36422
+    },
+    {
+      "path": "promo-5-m.webp",
+      "sha256": "a986b8fbfcad6da70d67c6df9e3dda69b0c7601f64f6f06a45081b3d635e4084",
+      "size": 28502
+    },
+    {
+      "path": "promo-6-d.webp",
+      "sha256": "a3b240d70bce2e9e9ff5091c14388b6c2556a23259d46728da6a64314c86bf9f",
+      "size": 67214
+    },
+    {
+      "path": "promo-6-m.webp",
+      "sha256": "cbf55ab486819a2faee0b66b28472db6a151e03c4f3077953133e1c50a417055",
+      "size": 32846
+    },
+    {
+      "path": "timer-bg-m.webp",
+      "sha256": "89b9d2cc26d07dcc6af6aa8bd47d685f0b6f12efc4c0107a240b7d4be8d157d9",
+      "size": 8686
+    },
+    {
+      "path": "timer-bg.webp",
+      "sha256": "82d6f91fcae16b59ea45c7c3e4c88078ee80710a40e7ba9aec9e534b7cc620f9",
+      "size": 11634
+    }
+  ]
+}

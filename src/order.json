@@ -4,6 +4,9 @@
     "welcome",
     "timer",
     "text",
-    "promotions"
+    "tooltip-orchestrator",
+    "promotions",
+    "hotels",
+    "contacts"
   ]
 }

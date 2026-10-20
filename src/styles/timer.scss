@@ -28,6 +28,10 @@ coral-timer::part(container) {
   background: url("/timer-bg.jpg");
   margin: 0;
   flex-direction: column-reverse;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 coral-timer::part(text-block) {

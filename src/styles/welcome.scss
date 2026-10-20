@@ -1,3 +1,745 @@
+/* Coral: единая тёмная тема. Заменяет предыдущий CSS целиком.
+   Основной фон: #121212. Остальные оттенки сохранены. */
+
+html,
+html .css-var-root.css-var-root {
+  /* Основа темы */
+  color-scheme: dark;
+  --diamond-bg: #121212;
+  --diamond-surface: #363642;
+  --diamond-surface-hover: #454552;
+  --diamond-control: #3a3a41;
+  --diamond-border: rgba(255, 255, 255, 0.24);
+
+  /* Текст */
+  --ant-color-text-base: #fff;
+  --ant-color-text: rgba(255, 255, 255, 0.88);
+  --ant-color-text-heading: rgba(255, 255, 255, 0.88);
+  --ant-color-text-secondary: rgba(255, 255, 255, 0.65);
+  --ant-color-text-label: rgba(255, 255, 255, 0.65);
+  --ant-color-text-tertiary: rgba(255, 255, 255, 0.45);
+  --ant-color-text-description: rgba(255, 255, 255, 0.45);
+  --ant-color-text-placeholder: rgba(255, 255, 255, 0.38);
+  --ant-color-text-disabled: rgba(255, 255, 255, 0.25);
+  --ant-color-text-quaternary: rgba(255, 255, 255, 0.25);
+  --ant-color-text-light-solid: #fff;
+  --Text-color_Text_Dark: var( --ant-color-text, rgba(255, 255, 255, 0.88) );
+
+  /* Поверхности и заливки */
+  --ant-color-bg-base: var(--diamond-bg);
+  --ant-color-bg-layout: var(--diamond-bg);
+  --ant-color-bg-container: var(--diamond-surface);
+  --ant-color-bg-elevated: var(--diamond-surface);
+  --ant-color-bg-spotlight: var(--diamond-surface-hover);
+  --ant-color-bg-container-disabled: rgba(255, 255, 255, 0.08);
+  --ant-color-bg-text-hover: rgba(255, 255, 255, 0.08);
+  --ant-color-bg-text-active: rgba(255, 255, 255, 0.12);
+  --ant-color-fill: rgba(255, 255, 255, 0.18);
+  --ant-color-fill-secondary: rgba(255, 255, 255, 0.12);
+  --ant-color-fill-tertiary: rgba(255, 255, 255, 0.08);
+  --ant-color-fill-quaternary: rgba(255, 255, 255, 0.04);
+  --ant-color-fill-alter: rgba(255, 255, 255, 0.04);
+  --ant-color-bg-blur: var(--diamond-bg);
+  --ant-color-fill-content: rgba(255, 255, 255, 0.08);
+  --ant-color-fill-content-hover: rgba(255, 255, 255, 0.12);
+
+  /* Границы и иконки */
+  --ant-color-border: rgba(255, 255, 255, 0.24);
+  --ant-color-border-secondary: rgba(255, 255, 255, 0.12);
+  --ant-color-border-bg: var(--diamond-surface);
+  --ant-color-split: rgba(255, 255, 255, 0.12);
+  --ant-color-icon: rgba(255, 255, 255, 0.65);
+  --ant-color-icon-hover: rgba(255, 255, 255, 0.88);
+  --ant-color-border-disabled: rgba(255, 255, 255, 0.12);
+
+  /* Основной акцент и состояния выбора */
+  --ant-color-primary: rgba(22, 104, 220, 1);
+  --ant-color-primary-hover: #4096ff;
+  --ant-color-primary-active: #0958d9;
+  --ant-color-primary-bg: rgba(22, 104, 220, 0.18);
+  --ant-color-primary-bg-hover: rgba(22, 104, 220, 0.28);
+  --ant-color-primary-border: #1668dc;
+  --ant-color-primary-border-hover: #4096ff;
+  --ant-color-primary-text: #69b1ff;
+  --ant-color-primary-text-hover: #91caff;
+  --ant-color-primary-text-active: #4096ff;
+  --ant-control-item-bg-active: #1668dc;
+  --ant-control-item-bg-hover: rgba(255, 255, 255, 0.08);
+  --ant-control-item-bg-active-hover: #0958d9;
+  --ant-control-item-bg-active-disabled: rgba(255, 255, 255, 0.18);
+
+  /* Статусные цвета */
+  --ant-color-warning: #f9b515;
+  --ant-color-warning-bg: rgba(249, 181, 21, 0.14);
+  --ant-color-warning-bg-hover: rgba(249, 181, 21, 0.2);
+  --ant-color-warning-border: rgba(249, 181, 21, 0.45);
+  --ant-color-warning-border-hover: rgba(249, 181, 21, 0.65);
+  --ant-color-warning-text: #ffd666;
+  --ant-color-warning-text-hover: #ffe58f;
+  --ant-color-warning-text-active: #ffc53d;
+  --ant-color-warning-outline: rgba(249, 181, 21, 0.15);
+  --ant-color-error-bg: rgba(232, 79, 14, 0.14);
+  --ant-color-error-bg-hover: rgba(232, 79, 14, 0.2);
+  --ant-color-error-border: rgba(232, 79, 14, 0.45);
+  --ant-color-error-text: #ff9c6e;
+  --ant-color-success-bg: rgba(82, 196, 26, 0.14);
+  --ant-color-success-bg-hover: rgba(82, 196, 26, 0.2);
+  --ant-color-success-border: rgba(82, 196, 26, 0.45);
+  --ant-color-success-text: #95de64;
+  --ant-color-info-bg: rgba(119, 171, 220, 0.14);
+  --ant-color-info-bg-hover: rgba(119, 171, 220, 0.2);
+  --ant-color-info-border: rgba(119, 171, 220, 0.45);
+  --ant-color-info-text: #91caff;
+
+  /* Select и TreeSelect */
+  --ant-select-background-color: var(--diamond-control);
+  --ant-select-selector-bg: var(--diamond-control);
+  --ant-select-clear-bg: var(--diamond-control);
+  --ant-select-color: rgba(255, 255, 255, 0.88);
+  --ant-select-border-color: rgba(255, 255, 255, 0.24);
+  --ant-select-hover-border-color: #4096ff;
+  --ant-select-active-border-color: rgba(22, 104, 220, 1);
+  --ant-select-active-outline-color: rgba(22, 104, 220, 0.2);
+  --ant-select-multi-item-background: rgba(255, 255, 255, 0.12);
+  --ant-select-multiple-item-bg: rgba(255, 255, 255, 0.12);
+  --ant-select-multiple-item-color-disabled: rgba(255, 255, 255, 0.25);
+  --ant-select-multiple-selector-bg-disabled: rgba(255, 255, 255, 0.08);
+  --ant-select-option-active-bg: rgba(255, 255, 255, 0.08);
+  --ant-select-option-selected-bg: #1668dc;
+  --ant-select-option-selected-color: #fff;
+  --ant-tree-select-node-hover-bg: rgba(255, 255, 255, 0.08);
+  --ant-tree-select-node-hover-color: rgba(255, 255, 255, 0.88);
+  --ant-tree-select-node-selected-bg: #1668dc;
+  --ant-tree-select-node-selected-color: #fff;
+
+  /* Вкладки */
+  --ant-tabs-card-bg: rgba(255, 255, 255, 0.04);
+  --ant-tabs-ink-bar-color: rgba(22, 104, 220, 1);
+  --ant-tabs-item-color: rgba(255, 255, 255, 0.65);
+  --ant-tabs-item-hover-color: #69b1ff;
+  --ant-tabs-item-active-color: #4096ff;
+  --ant-tabs-item-selected-color: #69b1ff;
+
+  /* Календарь */
+  --ant-date-picker-active-bg: var(--diamond-control);
+  --ant-date-picker-hover-bg: var(--diamond-control);
+  --ant-date-picker-active-border-color: rgba(22, 104, 220, 1);
+  --ant-date-picker-hover-border-color: #4096ff;
+  --ant-date-picker-active-shadow: 0 0 0 2px rgba(22, 104, 220, 0.2);
+  --ant-date-picker-addon-bg: rgba(255, 255, 255, 0.04);
+  --ant-date-picker-cell-bg-disabled: rgba(255, 255, 255, 0.06);
+  --ant-date-picker-cell-hover-bg: rgba(255, 255, 255, 0.08);
+  --ant-date-picker-cell-active-with-range-bg: rgba(22, 104, 220, 0.24);
+  --ant-date-picker-cell-hover-with-range-bg: rgba(22, 104, 220, 0.34);
+  --ant-date-picker-cell-range-border-color: rgba(22, 104, 220, 1);
+  --ant-date-picker-multiple-item-bg: rgba(255, 255, 255, 0.12);
+  --ant-date-picker-multiple-item-color-disabled: rgba(255, 255, 255, 0.25);
+  --ant-date-picker-multiple-selector-bg-disabled: rgba(255, 255, 255, 0.08);
+
+  /* Кнопки */
+  --ant-button-default-bg: var(--diamond-control);
+  --ant-button-default-hover-bg: var(--diamond-surface-hover);
+  --ant-button-default-active-bg: var(--diamond-surface);
+  --ant-button-default-bg-disabled: rgba(255, 255, 255, 0.08);
+  --ant-button-default-color: rgba(255, 255, 255, 0.88);
+  --ant-button-default-hover-color: #69b1ff;
+  --ant-button-default-active-color: #4096ff;
+  --ant-button-default-border-color: rgba(255, 255, 255, 0.24);
+  --ant-button-default-border-color-disabled: rgba(255, 255, 255, 0.12);
+  --ant-button-border-color-disabled: rgba(255, 255, 255, 0.12);
+  --ant-button-text-text-color: rgba(255, 255, 255, 0.88);
+  --ant-button-text-text-hover-color: #69b1ff;
+  --ant-button-text-text-active-color: #4096ff;
+  --ant-button-text-hover-bg: rgba(255, 255, 255, 0.08);
+
+}
+
+/* Страница и навигация */
+
+html body,
+html #header-row,
+html #section-row-6,
+html #section-row-7,
+html #footer-row {
+  color: var(--ant-color-text);
+  background-color: var(--diamond-bg) !important;
+}
+
+html #footer-row .column,
+html #footer-row [class*="FooterWidget_footerWidget"] {
+  background-color: transparent !important;
+}
+
+html #header-row [class*="DepartureContact_popoverTrigger"],
+html #header-row .basic-button-container,
+html #header-row .btn-child span,
+html #breadcrumb-widget,
+html #breadcrumb-widget a,
+html #breadcrumb-widget span {
+  color: var(--ant-color-text) !important;
+}
+
+html #header-row .anticon svg path,
+html #header-row .anticon svg circle,
+html .ant-picker-suffix svg path,
+html .ant-picker-suffix svg rect,
+html .ant-select-arrow svg path {
+  stroke: currentColor !important;
+}
+
+html #section-row-3,
+html #section-column-1 {
+  background-color: var(--diamond-bg) !important;
+}
+
+html #ny-2026-bubble [slot="text"] {
+  color: var(--ant-color-text) !important;
+}
+
+html .menu-dropdown-item::after {
+  background-image: none !important;
+  background-color: var(--ant-color-text-secondary) !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 6'%3E%3Cpath d='M1 1l4.5 4L10 1' fill='none' stroke='black' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 6'%3E%3Cpath d='M1 1l4.5 4L10 1' fill='none' stroke='black' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+html .menu-dropdown-item:hover::after {
+  background-color: var(--ant-color-primary-text, #69b1ff) !important;
+}
+
+/* Секции с единственной пустой колонкой. */
+.row-outer-container:has( > .row-container > .ant-row > .column:only-child:empty ) {
+  display: none !important;
+}
+
+/* Согласованное скрытие платёжного логотипа. */
+[alt="payment-logo"] {
+  display: none;
+}
+
+/* Поля ввода и селекторы */
+
+html .ant-input-outlined,
+html .ant-picker-outlined,
+html .ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+  color: var(--ant-color-text);
+  background: var(--diamond-control) !important;
+  border-color: var(--diamond-border) !important;
+}
+
+html .ant-input::placeholder,
+html .ant-picker-input > input::placeholder,
+html .ant-select-selection-placeholder {
+  color: var(--ant-color-text-placeholder) !important;
+}
+
+html .ant-input,
+html .ant-picker-input > input,
+html .ant-select-selection-item {
+  color: var(--ant-color-text) !important;
+}
+
+html .ant-input-outlined:hover,
+html .ant-input-outlined:focus-within,
+html .ant-picker-outlined:hover,
+html .ant-picker-outlined:focus-within,
+html .ant-select-focused .ant-select-selector,
+html .ant-select-outlined:hover .ant-select-selector {
+  border-color: var(--ant-color-primary) !important;
+}
+
+html input.ant-input,
+html .ant-input-affix-wrapper {
+  color: var(--ant-color-text) !important;
+  background-color: var(--diamond-control, #3a3a41) !important;
+  border-color: var(--ant-color-border) !important;
+}
+
+html .ant-input-affix-wrapper > input.ant-input {
+  background-color: transparent !important;
+}
+
+html input.ant-input::placeholder {
+  color: var(--ant-color-text-placeholder) !important;
+}
+
+html input.ant-input:focus,
+html .ant-input-affix-wrapper:focus-within {
+  border-color: var(--ant-color-primary-hover, #4096ff) !important;
+}
+
+/* Всплывающие окна, списки и календарь */
+
+html .ant-select-dropdown,
+html .ant-dropdown-menu,
+html .ant-picker-panel-container,
+html .ant-popover-container,
+html .ant-popover-inner,
+html .ant-modal-container,
+html .ant-modal-content,
+html .ant-modal-header {
+  color: var(--ant-color-text);
+  background: var(--ant-color-bg-elevated) !important;
+}
+
+html .ant-modal-close {
+  color: var(--ant-color-icon) !important;
+  background: var(--ant-color-bg-elevated) !important;
+}
+
+html .ant-modal-close:hover {
+  color: var(--ant-color-icon-hover) !important;
+  background: var(--ant-color-bg-text-hover) !important;
+}
+
+html .ant-select-item,
+html .ant-dropdown-menu-item,
+html .ant-picker-header,
+html .ant-picker-cell-in-view,
+html .ant-modal-title,
+html .ant-popover-title {
+  color: var(--ant-color-text-secondary) !important;
+}
+
+html .ant-select-item-option-active:not(.ant-select-item-option-disabled),
+html .ant-dropdown-menu-item:hover {
+  background: var(--diamond-surface-hover) !important;
+}
+
+html .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  color: #fff !important;
+  background: var(--ant-control-item-bg-active) !important;
+}
+
+html .ant-tree,
+html .ant-select-tree {
+  color: var(--ant-color-text-secondary);
+  background: var(--ant-color-bg-elevated) !important;
+}
+
+html .ant-checkbox-inner,
+html .ant-tree-checkbox-inner {
+  background: transparent;
+  border-color: var(--diamond-border) !important;
+}
+
+html .ant-select-dropdown {
+  --ant-select-option-selected-bg: rgba(22, 104, 220, 0.22);
+  --ant-select-option-selected-color: var(--ant-color-text);
+}
+
+html .ant-select-dropdown .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  color: var(--ant-color-text) !important;
+  background: var(--ant-select-option-selected-bg) !important;
+}
+
+html .ant-select-dropdown .ant-select-item-option-selected:not(.ant-select-item-option-disabled) .ant-select-item-option-state {
+  color: var(--ant-color-primary-text, #69b1ff) !important;
+}
+
+/* Авторизация и регистрация */
+
+html .ant-modal:has([class*="LoginModal_"]) .ant-modal-container,
+html .ant-modal:has([class*="LoginModal_"]) .ant-modal-body,
+html [class*="LoginModal_tab"],
+html [class*="LoginModal_container"] {
+  color: var(--ant-color-text) !important;
+  background: var(--ant-color-bg-elevated) !important;
+}
+
+html [class*="LoginModal_"] .ant-tabs-tab,
+html [class*="LoginModal_"] .ant-tabs-tab-btn,
+html [class*="LoginModal_"] .ant-form,
+html [class*="LoginModal_"] .ant-form-item,
+html [class*="LoginModal_"] .ant-form-item-label > label,
+html [class*="LoginModal_"] [class*="LoginForm_loginText"],
+html [class*="LoginModal_"] [class*="PasswordInputHintLabel"],
+html [class*="LoginModal_"] .not-a-member,
+html [class*="LoginModal_"] p {
+  color: var(--ant-color-text) !important;
+}
+
+html [class*="LoginModal_"] [class*="Agreement_"],
+html [class*="LoginModal_"] .ant-checkbox-wrapper,
+html [class*="LoginModal_"] .ant-checkbox-label {
+  color: var(--ant-color-text) !important;
+}
+
+html [class*="LoginModal_"] .ant-checkbox {
+  background: var(--diamond-control) !important;
+  border-color: var(--diamond-border) !important;
+}
+
+html [class*="LoginModal_"] .ant-checkbox-checked {
+  background: var(--ant-color-primary) !important;
+  border-color: var(--ant-color-primary) !important;
+}
+
+html [class*="LoginModal_"] .ant-tabs-ink-bar {
+  background: var(--ant-color-primary) !important;
+}
+
+html [class*="LoginModal_"] .ant-btn-default {
+  color: var(--ant-color-text) !important;
+  background: var(--diamond-control) !important;
+  border-color: var(--diamond-border) !important;
+}
+
+html [class*="LoginModal_"] .ant-btn-default:hover {
+  color: #69b1ff !important;
+  background: var(--diamond-surface-hover) !important;
+  border-color: var(--ant-color-primary) !important;
+}
+
+html [class*="LoginModal_"] .ant-input-password-icon,
+html [class*="LoginModal_"] [class*="lazy-loginModal__HintIcon"] {
+  color: var(--ant-color-icon) !important;
+}
+
+html [class*="LoginModal_"] .ant-input-password-icon svg,
+html [class*="LoginModal_"] .ant-input-password-icon svg path,
+html [class*="LoginModal_"] [class*="lazy-loginModal__HintIcon"] svg path {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+html [class*="LoginModal_"] .ant-tabs-tab-active .ant-tabs-tab-btn,
+html [class*="LoginModal_"] .forgotPasswordButton,
+html [class*="LoginModal_"] [class*="Agreement_"] a,
+html [class*="LoginModal_"] .loginRedirectButton {
+  color: var(--ant-color-primary-text, #69b1ff) !important;
+}
+
+html [class*="LoginModal_"] .forgotPasswordButton:hover,
+html [class*="LoginModal_"] [class*="Agreement_"] a:hover,
+html [class*="LoginModal_"] .loginRedirectButton:hover {
+  color: var(--ant-color-primary-text-hover, #91caff) !important;
+}
+
+/* Поиск тура: иконки, туристы и авиабилеты */
+
+html .ant-popover [class*="QSPassengerPopoverContent_text"],
+html .ant-popover [class*="QSPassengerPopoverContent_value"] {
+  color: var(--ant-color-text) !important;
+}
+
+html #quick-search-tab-area .tab-icon {
+  color: inherit;
+}
+
+html #quick-search-tab-area .tab-icon svg [stroke]:not([stroke="none"]),
+html [data-testid="quickSearchBarBlock"] .tab-icon svg [stroke]:not([stroke="none"]) {
+  stroke: currentColor !important;
+}
+
+html #quick-search-tab-area .tab-icon svg [fill]:not([fill="none"]),
+html [data-testid="quickSearchBarBlock"] .tab-icon svg [fill]:not([fill="none"]) {
+  fill: currentColor !important;
+}
+
+html #quick-search-tab-area .ant-select-suffix,
+html #quick-search-tab-area .ant-input-suffix,
+html [data-testid="quickSearchBarBlock"] .ant-select-suffix,
+html [data-testid="quickSearchBarBlock"] .ant-input-suffix {
+  color: var(--ant-color-text-secondary) !important;
+}
+
+html #quick-search-tab-area .ant-select-suffix svg [stroke]:not([stroke="none"]),
+html #quick-search-tab-area .ant-input-suffix svg [stroke]:not([stroke="none"]),
+html [data-testid="quickSearchBarBlock"] .ant-select-suffix svg [stroke]:not([stroke="none"]),
+html [data-testid="quickSearchBarBlock"] .ant-input-suffix svg [stroke]:not([stroke="none"]) {
+  stroke: currentColor !important;
+}
+
+html #quick-search-tab-area [class*="GibbousMoonIcon"] svg path,
+html [data-testid="quickSearchBarBlock"] [class*="GibbousMoonIcon"] svg path {
+  fill: currentColor !important;
+}
+
+html #quick-search-tab-area [class*="GibbousMoonIcon"] svg rect,
+html [data-testid="quickSearchBarBlock"] [class*="GibbousMoonIcon"] svg rect {
+  fill: var(--diamond-control) !important;
+}
+
+html [class*="SingleFromAndToSelectWrapper_exchangeIcon"] {
+  color: var(--ant-color-text-secondary) !important;
+  background: var(--diamond-control) !important;
+  border-color: var(--ant-color-border) !important;
+}
+
+html [class*="SingleFromAndToSelectWrapper_exchangeIcon"]:hover {
+  color: #69b1ff !important;
+  background: var(--diamond-surface-hover) !important;
+  border-color: rgba(22, 104, 220, 1) !important;
+}
+
+html [class*="SingleFromAndToSelectWrapper_exchangeIcon"] svg path,
+html [class*="QuickSearchFlightFromIcon"] svg path,
+html [class*="QuickSearchFlightFromIcon"] svg rect,
+html [class*="QuickSearchFlightToIcon"] svg path,
+html [class*="QuickSearchFlightToIcon"] svg rect {
+  fill: currentColor !important;
+}
+
+html [class*="QuickSearchFlightFromIcon"],
+html [class*="QuickSearchFlightToIcon"] {
+  color: var(--ant-color-text-secondary) !important;
+}
+
+html .QuickSearchFlightsSelectDatePicker .ant-picker-cell-inner:not(.regular-day):not(.charter-day):not(.both-day):not(.shadowSelection) {
+  background: transparent !important;
+}
+
+html .QuickSearchFlightsSelectDatePicker .ant-picker-cell-disabled .ant-picker-cell-inner {
+  color: var(--ant-color-text-disabled) !important;
+}
+
+html [data-testid="qs-passenger-popover"] [class*="QSPassengerPopoverContent_stepperIcon"] {
+  color: var(--ant-color-text) !important;
+}
+
+html [data-testid="qs-passenger-popover"] .basic-button-container:not(:disabled):not([aria-disabled="true"]):hover {
+  background-color: var(--diamond-surface-hover, #454552) !important;
+}
+
+html [data-testid="qs-passenger-popover"] .basic-button-container:disabled [class*="QSPassengerPopoverContent_stepperIcon"],
+html [data-testid="qs-passenger-popover"] .basic-button-container[aria-disabled="true"] [class*="QSPassengerPopoverContent_stepperIcon"] {
+  color: var(--ant-color-text-disabled) !important;
+}
+
+/* Остальные компоненты */
+
+html [class*="CookieAgreement_cookieAgreement"] {
+  color: var(--ant-color-text-secondary) !important;
+  background: var(--ant-color-bg-elevated) !important;
+  border-color: var(--ant-color-border-secondary) !important;
+}
+
+html .ant-divider {
+  border-color: var(--ant-color-split) !important;
+}
+
+html .ant-radio-button-wrapper {
+  color: #69b1ff !important;
+  background: var(--diamond-control) !important;
+  border-color: rgba(22, 104, 220, 1) !important;
+}
+
+html .ant-radio-button-wrapper:hover {
+  color: #91caff !important;
+  background: rgba(22, 104, 220, 0.18) !important;
+}
+
+html .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  color: #fff !important;
+  background: rgba(22, 104, 220, 1) !important;
+  border-color: rgba(22, 104, 220, 1) !important;
+}
+
+/* Мобильная версия: меню и окна выбора тура. */
+@media (max-width: 992px) {
+  html .select-option-item {
+    color: #69b1ff !important;
+    background: var(--diamond-control) !important;
+    border-color: rgba(22, 104, 220, 1) !important;
+  }
+
+  html .select-option-item:hover {
+    color: #91caff !important;
+    background: rgba(22, 104, 220, 0.18) !important;
+  }
+
+  html .select-option-item.selected,
+  html .select-option-item[aria-selected="true"] {
+    color: #fff !important;
+    background: rgba(22, 104, 220, 1) !important;
+    border-color: rgba(22, 104, 220, 1) !important;
+  }
+
+  html .ant-checkbox-group .ant-checkbox-wrapper {
+    color: #69b1ff !important;
+    background: var(--diamond-control) !important;
+    border-color: rgba(22, 104, 220, 1) !important;
+  }
+
+  html .ant-checkbox-group .ant-checkbox-wrapper:hover {
+    color: #91caff !important;
+    background: rgba(22, 104, 220, 0.18) !important;
+  }
+
+  html .ant-checkbox-group .ant-checkbox-wrapper.ant-checkbox-wrapper-checked {
+    color: #fff !important;
+    background: rgba(22, 104, 220, 1) !important;
+    border-color: rgba(22, 104, 220, 1) !important;
+  }
+
+  html .ant-checkbox-group .ant-checkbox-wrapper .ant-checkbox-label {
+    color: inherit !important;
+  }
+
+  html [class*="HeaderHamburgerMenu_menuContainer"],
+  html [class*="HeaderHamburgerExtraMenus_headerHamburgerExtraMenus"],
+  html [data-testid="quickSearchBarBlock"] .ant-tabs,
+  html [class*="QSArrivalSelect_content"],
+  html [class*="QSArrivalSelect_title"] {
+    color: var(--ant-color-text);
+    background: var(--ant-color-bg-elevated) !important;
+  }
+
+  html [class*="HeaderHamburgerExtraMenus"] a,
+  html [class*="LoginAccountMenu_loginAccountMenuLink"] {
+    color: var(--ant-color-text) !important;
+    border-color: var(--diamond-border) !important;
+  }
+
+  html [class*="HeaderHamburgerMenu_headerHamburgerMenu"],
+  html [class*="HeaderMobile_rightGroup"],
+  html [class*="QSBlockMobile_qsBlockMobile"],
+  html [class*="FooterMenu_icon"] {
+    color: var(--ant-color-text-secondary) !important;
+  }
+
+  html [class*="HeaderHamburgerMenu_headerHamburgerMenu"] {
+    display: flex !important;
+    flex: 0 0 40px !important;
+    width: 40px !important;
+    height: 40px !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  html [class*="HeaderHamburgerMenu_menuButton"] {
+    display: inline-flex !important;
+    width: 40px !important;
+    min-width: 40px !important;
+    height: 40px !important;
+    padding: 8px !important;
+    color: var(--ant-color-text) !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  html [class*="HeaderMobile_rightGroup"] [class*="LoginButton_loginButton"],
+  html [class*="HeaderMobile_rightGroup"] [class*="lazy-headerWidget__UserCircleIcon"] {
+    color: var(--ant-color-text) !important;
+  }
+
+  html [class*="HeaderMobile_rightGroup"] [class*="lazy-headerWidget__UserCircleIcon"] svg [stroke]:not([stroke="none"]) {
+    stroke: var(--ant-color-text) !important;
+  }
+
+  html [class*="HeaderHamburgerMenu_tools"] .ant-btn-link,
+  html [class*="HeaderHamburgerMenu_tools"] [class*="lazy-footer__CallIcon"] {
+    color: rgba(22, 104, 220, 1) !important;
+  }
+
+  html [class*="LoginAccountMenu_loginAccountMenuAvatar"] {
+    color: #fff !important;
+    background: #1768dc !important;
+  }
+
+  html [class*="HeaderHamburgerMenu_tools"] [class*="lazy-footer__CallIcon"] svg [stroke]:not([stroke="none"]) {
+    stroke: currentColor !important;
+  }
+
+  html [class*="HeaderHamburgerMenu_headerHamburgerMenu"] svg [fill]:not([fill="none"]),
+  html [class*="HeaderMobile_rightGroup"] svg [fill]:not([fill="none"]) {
+    fill: currentColor !important;
+  }
+
+  html [class*="HeaderHamburgerExtraMenus"] [class*="HeartIcon"] svg,
+  html [class*="HeaderHamburgerExtraMenus"] [class*="HeartIcon"] svg path {
+    fill: none !important;
+  }
+
+  html [class*="HeaderHamburgerExtraMenus"] [class*="HeartIcon"] svg path {
+    stroke: currentColor !important;
+  }
+
+  html [class*="HeaderHamburgerMenu_headerHamburgerMenu"] svg [stroke]:not([stroke="none"]),
+  html [class*="HeaderMobile_rightGroup"] svg [stroke]:not([stroke="none"]),
+  html [class*="QSBlockMobile_qsBlockMobile"] .ant-input-suffix svg [stroke]:not([stroke="none"]),
+  html [class*="FooterMenu_icon"] svg [stroke]:not([stroke="none"]) {
+    stroke: currentColor !important;
+  }
+
+  html [class*="QSBlockMobile_qsBlockMobile"] .ant-input-suffix {
+    color: var(--ant-color-text-secondary) !important;
+  }
+
+  html [class*="QSBlockMobile_qsBlockMobile"] [class*="GibbousMoonIcon"] svg path {
+    fill: currentColor !important;
+  }
+
+  html [class*="QSBlockMobile_qsBlockMobile"] [class*="GibbousMoonIcon"] svg rect {
+    fill: var(--diamond-control) !important;
+  }
+
+  html [class*="QSBlockMobile_qsBlockMobile"] [class*="IconMobileEdit"] {
+    color: var(--ant-color-primary) !important;
+  }
+
+  html [class*="QSBlockMobile_qsBlockMobile"] [class*="IconMobileEdit"] svg [stroke]:not([stroke="none"]) {
+    stroke: currentColor !important;
+  }
+
+  html :is( [class*="MobileModalContainer_mobileModalContainer"], .qSModalContainer ) {
+    --ant-tabs-item-selected-color: var(--ant-color-primary-text);
+    --ant-tabs-item-active-color: var(--ant-color-primary-text-active);
+    --ant-tabs-item-hover-color: var(--ant-color-primary-text-hover);
+  }
+
+  html :is( [class*="MobileModalContainer_mobileModalContainer"], .qSModalContainer ) .ant-input-suffix {
+    color: var(--ant-color-text-secondary) !important;
+  }
+
+  html :is( [class*="MobileModalContainer_mobileModalContainer"], .qSModalContainer ) .ant-input-suffix svg [stroke]:not([stroke="none"]) {
+    stroke: currentColor !important;
+  }
+
+  html :is( [class*="MobileModalContainer_mobileModalContainer"], .qSModalContainer ) [class*="GibbousMoonIcon"] svg path {
+    fill: currentColor !important;
+  }
+
+  html :is( [class*="MobileModalContainer_mobileModalContainer"], .qSModalContainer ) .ant-modal-close {
+    color: var(--ant-color-text-secondary) !important;
+  }
+
+  html :is( [class*="MobileModalContainer_mobileModalContainer"], .qSModalContainer ) .ant-modal-close svg path {
+    fill: currentColor !important;
+  }
+
+  html [class*="MobileModalContainer_mobileModalContainer"] .tab-button[aria-selected="true"] {
+    color: var(--ant-color-primary-text) !important;
+    border-bottom-color: var(--ant-color-primary-text) !important;
+  }
+
+  html [class*="MobileModalContainer_mobileModalContainer"] .tab-icon {
+    color: inherit !important;
+  }
+
+  html [class*="MobileModalContainer_mobileModalContainer"] .tab-icon svg [stroke]:not([stroke="none"]) {
+    stroke: currentColor !important;
+  }
+
+  html [class*="quicksearchWidget__IconMobileEdit"] {
+    color: var(--ant-color-text-secondary) !important;
+  }
+
+  html [class*="quicksearchWidget__IconMobileEdit"] svg [stroke]:not([stroke="none"]) {
+    stroke: currentColor !important;
+  }
+
+}
+
+/* Только для стилей ВНУТРИ Shadow DOM coral-bubble.
+   Снаружи компонента этот селектор не достигает его рамки.
+   Исходное правило оставлено отдельно, без изменения поведения. */
+.coral-popup-trigger {
+  border-color: #69696e;
+}
+
+
 .corallium {
   padding-block: calc(48px / 2);
   padding-inline: 16px;
@@ -15,4 +757,19 @@
   margin: 0 0 16px 0;
   font-weight: var(--font-font_Weight_Semibold, 600);
   line-height: var(--font-font_Line_Height_Heading_2, 40px); /* 125% */
+}
+
+.corallium-h3 {
+  color: var(--Text-color_Text_Dark, #FFF);
+  font-size: var(--font-font_Size_Heading_4, 24px);
+  font-style: normal;
+  margin: 0;
+  font-weight: var(--font-font_Weight_Semibold, 600);
+  line-height: var(--font-font_Line_Height_Heading_4, 32px); /* 133.333% */
+}
+
+.corallium-p {
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0;
 }
