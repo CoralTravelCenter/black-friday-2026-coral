@@ -9,8 +9,8 @@
   "blocks": [
     {
       "path": "welcome.html",
-      "sha256": "d942baf71a882f33f4bba86168fbc7eb7c02404838f56b8818e582723a187d00",
-      "size": 23626
+      "sha256": "1296afbfe53f0d7bbf9dc700381bc6e6c74bef871ad697365bcce6b680d0c96a",
+      "size": 25225
     },
     {
       "path": "timer.html",
@@ -29,13 +29,13 @@
     },
     {
       "path": "promotions.html",
-      "sha256": "b2804c88151d2104f4de3a747ed3b3a56351c9be1ec65a9c1f0889dda8be6700",
-      "size": 29785
+      "sha256": "f6f7d0c536a046674a6563e1fb15331d438596d8b3f7743e968aa532189a18bf",
+      "size": 82619
     },
     {
       "path": "hotels.html",
-      "sha256": "0e302a4dacae1f458c5fa55fb3af21a1ef58e01b1fb805e1ef95df20a6e21a0e",
-      "size": 176
+      "sha256": "e2c9231e26a0dbfc74243b16f78babc5435c40bb3975c42ef2b6888b599426c8",
+      "size": 2757
     },
     {
       "path": "contacts.html",

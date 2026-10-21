@@ -1,20 +1,34 @@
 import {hostReactAppReady} from "./utils/hostReactAppReady.js";
 import tooltip_orchestrator from "./tooltip-orchestrator.js";
+import {requestCardActivation} from "./utils/card-activation/index.js";
+
+const NEW_CLIENT_PROMO = "L7C9597QDX0ZTK3J1FARHS321SFLMWQ640RK1N3G4LA3UHP99MEWEOXFDIMNPH5";
+const PROMOTION_ADVERTISEMENTS = [
+  {name: "ООО «Центрбронь»", erid: "2W5zFJxDooo"},
+  {name: "ООО «Центрбронь»", erid: "2W5zFJuHBAq"},
+  {name: "ООО «Центрбронь»", erid: "2W5zFGka6h7"},
+  {name: "ООО «Центрбронь»", erid: "2W5zFGF5Nd7"},
+  {name: "ООО «Центрбронь»", erid: "2W5zFG6AVm3"},
+  {name: "ООО «Центрбронь»", erid: "2W5zFGZATjF"},
+];
 
 export default async function promotions() {
   await hostReactAppReady()
   await tooltip_orchestrator();
 
-  document.querySelectorAll(".promotions .tabs-pannel .visual").forEach((visual) => {
+  document.querySelectorAll(".promotions .tabs-pannel .visual").forEach((visual, index) => {
     if (visual.querySelector(".coral-tooltip--overlay")) return;
-    const tooltip = window.CoralTooltip.createAdvertisement({
-      name: "ООО «Центрбронь»",
-    });
+    const tooltip = window.CoralTooltip.createAdvertisement(PROMOTION_ADVERTISEMENTS[index]);
     visual.append(tooltip);
   });
 
   const buttons = document.querySelectorAll(".tabs-list-item button");
   const pannels = document.querySelectorAll(".tabs-pannel");
+  const registrationButton = document.querySelector("[data-bonus-registration]");
+
+  registrationButton?.addEventListener("click", () => {
+    void requestCardActivation(NEW_CLIENT_PROMO);
+  });
   
   function classRemover(elems) {
     elems.forEach(item => item.classList.remove("js-active"));
@@ -24,10 +38,18 @@ export default async function promotions() {
 
   buttons.forEach((button, idx) => {
     button.addEventListener("click", (e) => {
+        const hotelPanels = document.querySelectorAll("[data-hotels-panel]");
+
         classRemover(buttons);
         classRemover(pannels);
+        classRemover(hotelPanels);
         e.target.classList.add("js-active");
         pannels[idx].classList.add("js-active");
+
+        const hotelPanelKey = button.dataset.hotelsTab;
+        if (hotelPanelKey) {
+          document.querySelector(`[data-hotels-panel="${hotelPanelKey}"]`)?.classList.add("js-active");
+        }
     })
   })
 }

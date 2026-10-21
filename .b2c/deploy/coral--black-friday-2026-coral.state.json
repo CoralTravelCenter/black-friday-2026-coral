@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "assets": {
+    "kv-d.webp": {
+      "path": "kv-d.webp",
+      "sha256": "4afef0b22a3842481879317a6c528dc173c7cf35d255ceaca90ad3370798be3b",
+      "size": 67652,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/black-friday-2026-coral/kv-d.webp",
+      "managed": true
+    },
+    "kv-m.webp": {
+      "path": "kv-m.webp",
+      "sha256": "a741ab3b6b0cc06b3fd4fd18fed47d5f278176efa56d221d898aceaacff89cf4",
+      "size": 43480,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/black-friday-2026-coral/kv-m.webp",
+      "managed": true
+    },
+    "promo-1-d.webp": {
+      "path": "promo-1-d.webp",
+      "sha256": "61cad613fc8edcb151f3e0ce5ac710a03ae807251b38e4a3197af4bf6e5e4a29",
+      "size": 20864,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/black-friday-2026-coral/promo-1-d.webp",
+      "managed": true
+    },
+    "promo-2-d.webp": {
+      "path": "promo-2-d.webp",
+      "sha256": "722e761ea94ee2dc4be00dcb5f5e1cff825f69004bfeca120357d45b4cd7e676",
+      "size": 27246,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/black-friday-2026-coral/promo-2-d.webp",
+      "managed": true
+    },
+    "promo-1-m.webp": {
+      "path": "promo-1-m.webp",
+      "sha256": "1de10dfecaf6a5c31a3998d07d1c21c3e98ba6410481658d920a76171d931a96",
+      "size": 12860,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/black-friday-2026-coral/promo-1-m.webp",
+      "managed": true
+    },
+    "promo-3-m.webp": {
+      "path": "promo-3-m.webp",
+      "sha256": "775641a76498a39dc1581c1ac1a4bb00864769a6be147b33a21248e2cc704093",
+      "size": 24254,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/black-friday-2026-coral/promo-3-m.webp",
+      "managed": true
+    },
+    "promo-2-m.webp": {
+      "path": "promo-2-m.webp",
+      "sha256": "ff5ddd3f43051aa1e1542b0f457d2cc528fc453f67c4dfc845b85803c3c67c58",
+      "size": 14100,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/black-friday-2026-coral/promo-2-m.webp",
+      "managed": true
+    },
+    "promo-3-d.webp": {
+      "path": "promo-3-d.webp",
+      "sha256": "e72587afaea251f4b85503e5d3dfd8c9c5cd47dc9620014455f397b49a25768e",
+      "size": 38704,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/black-friday-2026-coral/promo-3-d.webp",
+      "managed": true
+    },
+    "promo-4-d.webp": {
+      "path": "promo-4-d.webp",
+      "sha256": "3951ba452b124ca1f9caff69dbbfed91b6bac1d3672266722a1ad93fef4cffaf",
+      "size": 33454,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/black-friday-2026-coral/promo-4-d.webp",
+      "managed": true
+    },
+    "promo-4-m.webp": {
+      "path": "promo-4-m.webp",
+      "sha256": "41e8f0653be8f2cd3580a11262365e5d645ebd75e3d1b3eadee00966d86e11cb",
+      "size": 29186,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/black-friday-2026-coral/promo-4-m.webp",
+      "managed": true
+    },
+    "promo-5-d.webp": {
+      "path": "promo-5-d.webp",
+      "sha256": "fdb84889773efd79e0ced4bc725451b4ecb9c2aed5425c0d7f24abd5ad895d6e",
+      "size": 36422,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/black-friday-2026-coral/promo-5-d.webp",
+      "managed": true
+    },
+    "promo-5-m.webp": {
+      "path": "promo-5-m.webp",
+      "sha256": "a986b8fbfcad6da70d67c6df9e3dda69b0c7601f64f6f06a45081b3d635e4084",
+      "size": 28502,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/black-friday-2026-coral/promo-5-m.webp",
+      "managed": true
+    },
+    "promo-6-m.webp": {
+      "path": "promo-6-m.webp",
+      "sha256": "cbf55ab486819a2faee0b66b28472db6a151e03c4f3077953133e1c50a417055",
+      "size": 32846,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/black-friday-2026-coral/promo-6-m.webp",
+      "managed": true
+    },
+    "timer-bg-m.webp": {
+      "path": "timer-bg-m.webp",
+      "sha256": "89b9d2cc26d07dcc6af6aa8bd47d685f0b6f12efc4c0107a240b7d4be8d157d9",
+      "size": 8686,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/black-friday-2026-coral/timer-bg-m.webp",
+      "managed": true
+    },
+    "promo-6-d.webp": {
+      "path": "promo-6-d.webp",
+      "sha256": "a3b240d70bce2e9e9ff5091c14388b6c2556a23259d46728da6a64314c86bf9f",
+      "size": 67214,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/black-friday-2026-coral/promo-6-d.webp",
+      "managed": true
+    },
+    "timer-bg.webp": {
+      "path": "timer-bg.webp",
+      "sha256": "82d6f91fcae16b59ea45c7c3e4c88078ee80710a40e7ba9aec9e534b7cc620f9",
+      "size": 11634,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/black-friday-2026-coral/timer-bg.webp",
+      "managed": true
+    }
+  }
+}

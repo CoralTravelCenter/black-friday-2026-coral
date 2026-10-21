@@ -179,6 +179,56 @@ html #breadcrumb-widget span {
   color: var(--ant-color-text) !important;
 }
 
+html #header-row [class*="LoginAccountMenu_loginAccountMenuLink"] {
+  color: var(--ant-color-text) !important;
+  background: var(--diamond-control) !important;
+  border-color: var(--diamond-border) !important;
+}
+
+html #header-row [class*="LoginAccountMenu_loginAccountMenuAvatar"] {
+  color: #fff !important;
+  background: #1768dc !important;
+}
+
+html .ant-dropdown:has(a[href="/account/"]),
+html .ant-dropdown:has(a[href="/account/"]) > * {
+  color: var(--ant-color-text);
+  background: var(--diamond-surface) !important;
+}
+
+html .ant-dropdown:has(a[href="/account/"]) {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+html .ant-dropdown:has(a[href="/account/"]) .ant-dropdown-menu-item img {
+  filter: brightness(0) invert(1);
+  opacity: 0.65;
+}
+
+html .ant-dropdown:has(a[href="/account/"]) .ant-dropdown-menu-item:hover img {
+  opacity: 0.88;
+}
+
+html #header-row [class*="DepartureContact_popoverTrigger"]:hover,
+html #header-row [class*="DepartureContact_popoverTrigger"]:focus-visible,
+html #header-row [class*="DepartureContact_popoverTrigger"]:focus-within {
+  color: var(--ant-color-primary-text) !important;
+  background: var(--diamond-surface-hover) !important;
+  border-color: var(--diamond-border) !important;
+}
+
+html #header-row [class*="DepartureContact_popoverTrigger"] .basic-button-container:hover,
+html #header-row [class*="DepartureContact_popoverTrigger"] .basic-button-container:focus-visible {
+  color: inherit !important;
+  background: transparent !important;
+}
+
+html #header-row [class*="DepartureContact_popoverTrigger"] .ant-btn:not(:disabled):not(.ant-btn-disabled):hover,
+html #header-row [class*="DepartureContact_popoverTrigger"] .ant-btn:not(:disabled):not(.ant-btn-disabled):focus-visible {
+  background-color: transparent !important;
+}
+
 html #header-row .anticon svg path,
 html #header-row .anticon svg circle,
 html .ant-picker-suffix svg path,

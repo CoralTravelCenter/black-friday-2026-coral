@@ -1,0 +1,544 @@
+$desktop: 768px;
+$surface: #24242c;
+$surface-raised: #363642;
+$surface-muted: #30303a;
+$text: #fff;
+$action: #1668dc;
+$action-hover: #2687ef;
+$action-active: #0e56bd;
+$focus: #66d1ff;
+$error: #ff8f7d;
+$border: rgba(255, 255, 255, 0.18);
+$muted: rgba(255, 255, 255, 0.68);
+$activation-assets-base: "https://b2ccdn.coral.ru/content/in-da-club/v2";
+
+.in-da-club-activation {
+  color: $text;
+}
+
+.in-da-club-activation::part(popup-body) {
+  @media (min-width: $desktop) {
+    align-items: center;
+  }
+}
+
+.in-da-club-activation::part(popup-close) {
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.in-da-club-activation::part(popup-dialog) {
+  max-width: 800px;
+  overflow: visible;
+  background: $surface;
+  border-radius: 16px;
+}
+
+.in-da-club-activation:has(.in-da-club-activation__body--single)::part(popup-dialog) {
+  max-width: 500px;
+}
+
+.in-da-club-activation::part(popup-content) {
+  position: relative;
+  gap: 0;
+
+  @media (max-width: ($desktop - 0.02px)) {
+    padding: 0;
+  }
+}
+
+.in-da-club-activation__close {
+  @media (max-width: ($desktop - 0.02px)) {
+    display: none;
+  }
+
+  button {
+    position: absolute;
+    z-index: 1;
+    top: -39px;
+    right: 0;
+  }
+}
+
+.in-da-club-activation .visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+
+.in-da-club-activation__body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  width: 100%;
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+  }
+}
+
+.in-da-club-activation__body--single {
+  @media (min-width: $desktop) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.in-da-club-activation__banner {
+  width: 100%;
+  aspect-ratio: 736 / 360;
+  background: url("#{$activation-assets-base}/activation-5000-for-activation-landscape.webp") center / cover no-repeat;
+  border-radius: 12px 12px 0 0;
+
+  @media (min-width: $desktop) {
+    height: 100%;
+    aspect-ratio: unset;
+    border-radius: 12px;
+    background-image: url("#{$activation-assets-base}/activation-5000-for-activation-portrait.webp");
+  }
+}
+
+.in-da-club-activation__panel {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 0 16px 16px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.2;
+
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
+}
+
+.in-da-club-activation__steps {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin: 0 0 16px;
+
+  [data-step-mark] {
+    display: grid;
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+    place-content: center;
+    font-weight: 700;
+    line-height: 1;
+    mask: url("#{$activation-assets-base}/activation-step-market-shape.svg") center / contain no-repeat;
+  }
+
+  [data-state="current"] {
+    color: $focus;
+    background: rgba(102, 209, 255, 0.16);
+  }
+
+  [data-state="complete"] {
+    color: $text;
+    background: rgba(27, 138, 76, 0.6);
+  }
+
+  [data-state="upcoming"] {
+    color: $muted;
+    background: $surface-raised;
+  }
+
+  i {
+    flex: 1;
+    height: 2px;
+    background: url("#{$activation-assets-base}/activation-steps-divider.svg") center no-repeat;
+  }
+}
+
+.in-da-club-activation__stage {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  flex-direction: column;
+
+  @media (min-width: $desktop) {
+    min-height: var(--in-da-club-activation-step-height, 0);
+  }
+
+  h2 {
+    margin: 0 0 12px;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1;
+  }
+}
+
+.in-da-club-activation__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  > label,
+  > .in-da-club-activation__city,
+  > .in-da-club-activation__row > label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  > label > span:first-child,
+  > .in-da-club-activation__city > label > span:first-child,
+  > .in-da-club-activation__row > label > span:first-child,
+  .in-da-club-activation__row legend {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  input:not([type="checkbox"]):not([type="radio"]) {
+    box-sizing: border-box;
+    width: 100%;
+    height: 36px;
+    padding: 0 10px;
+    font: inherit;
+    line-height: 34px;
+    color: $text;
+    caret-color: $focus;
+    background: $surface-raised;
+    border: 1px solid $border;
+    border-radius: 8px;
+    outline-color: $focus;
+  }
+
+  input[readonly] {
+    color: $muted;
+    background: $surface-muted !important;
+  }
+
+  input::placeholder {
+    color: $muted;
+  }
+
+  b {
+    color: $error;
+  }
+
+  &[data-state="sending"] > :not(.in-da-club-activation__submit) {
+    opacity: 0.55;
+  }
+}
+
+.in-da-club-activation__row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 32px;
+
+  fieldset {
+    padding: 0;
+    border: 0;
+  }
+
+  legend {
+    width: 100%;
+    margin-bottom: 4px;
+  }
+}
+
+.in-da-club-activation__gender-options {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  label {
+    display: grid;
+    min-width: 48px;
+    height: 36px;
+    padding: 0 18px;
+    place-content: center;
+    cursor: pointer;
+    font-size: 12px;
+    border: 1px solid $border;
+    border-radius: 8px;
+  }
+
+  input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  label:has(input:checked) {
+    cursor: default;
+    background: rgba(102, 209, 255, 0.14);
+    border-color: $focus;
+  }
+
+  label:has(input:focus-visible) {
+    outline: 2px solid $focus;
+    outline-offset: 2px;
+  }
+}
+
+.in-da-club-activation__consents {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  line-height: 1.35;
+
+  label {
+    display: grid;
+    grid-template-columns: min-content auto;
+    min-height: 40px;
+    align-items: flex-start;
+    column-gap: 6px;
+    cursor: pointer;
+  }
+
+  a {
+    color: $focus;
+    text-decoration: none;
+  }
+}
+
+.in-da-club-activation__checkbox {
+  display: grid;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  place-content: center;
+  background: $surface-raised;
+  border: 1px solid $border;
+  border-radius: 4px;
+
+  &::after {
+    width: 10px;
+    height: 8px;
+    background: $text;
+    clip-path: polygon(0 43%, 38% 100%, 100% 15%, 84% 0, 37% 68%, 15% 30%);
+    content: "";
+    opacity: 0;
+  }
+}
+
+input[type="checkbox"]:checked + .in-da-club-activation__checkbox {
+  background: $action;
+  border-color: $action;
+
+  &::after {
+    opacity: 1;
+  }
+}
+
+.in-da-club-activation__city {
+  position: relative;
+}
+
+.in-da-club-activation__city-options {
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin: 2px 0 0;
+  padding: 6px;
+  list-style: none;
+  color: $text;
+  background: $surface-raised;
+  border: 1px solid $border;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+
+  &[hidden] {
+    display: none;
+  }
+
+  button {
+    width: 100%;
+    padding: 6px 8px;
+    cursor: pointer;
+    color: $text;
+    text-align: left;
+    background: transparent;
+    border: 0;
+    border-radius: 8px;
+  }
+
+  button:hover,
+  button:focus-visible {
+    color: $text;
+    background: rgba(102, 209, 255, 0.14);
+  }
+}
+
+.in-da-club-activation__submit {
+  display: inline-flex;
+  min-height: 44px;
+  padding: 7px 18px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  color: $text !important;
+  font: inherit;
+  text-align: center;
+  text-decoration: none;
+  background: $action;
+  border: 0;
+  border-radius: 12px;
+
+  &:hover:not(:disabled) {
+    background: $action-hover;
+  }
+
+  &:active:not(:disabled) {
+    background: $action-active;
+    transform: scale(0.97);
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.6;
+  }
+}
+
+.in-da-club-activation__error,
+.in-da-club-activation__field-error {
+  color: $error;
+  font-size: 11px;
+}
+
+.in-da-club-activation__error {
+  margin: 4px 0 0;
+  text-align: center;
+}
+
+.in-da-club-activation [aria-invalid="true"]:not([type="checkbox"]):not([type="radio"]) {
+  border-color: $error !important;
+}
+
+.in-da-club-activation__resend {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  color: $focus;
+  font: inherit;
+  background: transparent;
+  border: 0;
+
+  &:disabled {
+    cursor: default;
+    color: $muted;
+  }
+}
+
+.in-da-club-activation__form[data-state="sending"] .in-da-club-activation__submit::before,
+.in-da-club-activation__verify[data-state="activating"] .in-da-club-activation__submit::before,
+.in-da-club-activation__resend[data-state="sending"]::before {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 14px;
+  box-sizing: border-box;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: in-da-club-button-spinner 700ms linear infinite;
+  content: "";
+}
+
+@keyframes in-da-club-button-spinner {
+  to { transform: rotate(360deg); }
+}
+
+.in-da-club-activation__status,
+.in-da-club-activation__result,
+.in-da-club-activation__verify {
+  display: flex;
+  flex: 1;
+  min-height: 320px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.in-da-club-activation__verify {
+  width: min(280px, 100%);
+  margin-inline: auto;
+
+  p { margin: 0; }
+
+  .in-da-club-activation__submit { width: 100%; }
+}
+
+.in-da-club-activation__code-input {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 8px;
+
+  input {
+    width: 40px;
+    height: 52px;
+    padding: 0 4px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid $border;
+    border-radius: 8px;
+    color: $text;
+    caret-color: $focus;
+    background: $surface-raised;
+    outline-color: $focus;
+  }
+}
+
+.in-da-club-activation__result-icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+  background: center / contain no-repeat;
+}
+
+.in-da-club-activation__result-icon--success {
+  background-image: url("#{$activation-assets-base}/activation-success-mark.svg");
+}
+
+.in-da-club-activation__result-icon--fail {
+  background-image: url("#{$activation-assets-base}/activation-fail-mark.svg");
+}
+
+.in-da-club-activation__card {
+  position: relative;
+  width: min(20em, 100%);
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  span {
+    position: absolute;
+    bottom: 1.2em;
+    left: 1.3em;
+    color: $text;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.62);
+  }
+}
+
+.in-da-club-activation__result p {
+  margin: 0;
+}

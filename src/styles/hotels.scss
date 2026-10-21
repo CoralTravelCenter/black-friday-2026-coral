@@ -1,2 +1,111 @@
 .hotels {
+  &-panel {
+    display: none;
+
+    &.js-active {
+      display: block;
+    }
+  }
+
+  .offre-vue {
+    color: var(--ant-color-text);
+  }
+
+  .controls {
+    background: transparent !important;
+    display: flex;
+
+    > *:not(.region-select) {
+      display: none;
+    }
+
+    .region-select {
+      width: 100%;
+    }
+
+    .region-select ul {
+      background: #111a20;
+      border-radius: 100px;
+    }
+
+    .region-select ul > li {
+      background: transparent;
+      color: var(--ant-color-text);
+      height: 3.4em;
+
+      &:hover {
+        background: var(--diamond-surface-hover);
+      }
+
+      &.selected {
+        background: #4096d0;
+        color: #fff;
+      }
+    }
+  }
+
+  .offers-list {
+    color: var(--ant-color-text);
+
+    > * {
+      background-color: var(--diamond-surface) !important;
+      border-color: var(--diamond-border) !important;
+      color: var(--ant-color-text) !important;
+    }
+
+    > * > *:not(img):not(picture) {
+      background-color: transparent !important;
+      border-color: var(--diamond-border) !important;
+    }
+
+    a:not([class*="button"]):not([class*="btn"]) {
+      color: var(--ant-color-text) !important;
+    }
+
+    button {
+      background: var(--diamond-control) !important;
+      border-color: var(--diamond-border) !important;
+      color: var(--ant-color-text) !important;
+
+      &:hover {
+        background: var(--diamond-surface-hover) !important;
+        border-color: #4096d0 !important;
+        color: #fff !important;
+      }
+
+      &[class*="active"],
+      &[class*="selected"] {
+        background: #4096d0 !important;
+        border-color: #4096d0 !important;
+        color: #fff !important;
+      }
+    }
+
+    [class*="cashback"],
+    [class*="cash-back"],
+    [class*="bonus"] {
+      background: var(--diamond-surface-hover) !important;
+      border-color: var(--diamond-border) !important;
+      color: var(--ant-color-text) !important;
+    }
+  }
+
+  .product-grid > .el-affix {
+    background: transparent !important;
+
+    button,
+    li,
+    [class*="page"] {
+      background: var(--diamond-control) !important;
+      border-color: var(--diamond-border) !important;
+      color: var(--ant-color-text) !important;
+    }
+
+    [class*="active"],
+    [aria-current="page"] {
+      background: #4096d0 !important;
+      border-color: #4096d0 !important;
+      color: #fff !important;
+    }
+  }
 }
