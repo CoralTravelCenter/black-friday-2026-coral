@@ -129,3 +129,12 @@
     }
   }
 }
+
+.product-card .details ul.terms li:before,
+.location.has-coordinates:before{
+  filter: invert(1) !important;
+}
+
+.product-card .pricing .tour-info .price-discount .price .from-wording {
+  color: #FFFFFF !important;
+}

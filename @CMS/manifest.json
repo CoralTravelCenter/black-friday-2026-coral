@@ -29,13 +29,13 @@
     },
     {
       "path": "promotions.html",
-      "sha256": "f6f7d0c536a046674a6563e1fb15331d438596d8b3f7743e968aa532189a18bf",
-      "size": 82619
+      "sha256": "0e931decc187fc50a1bb4a82d1f0dbbe9b01810815cbd459b3d66718aa37c6e5",
+      "size": 83320
     },
     {
       "path": "hotels.html",
-      "sha256": "d5be56d4c0dfff509a036e05b322a49262d83c07134ca4dc7ba9ff0cc7279c68",
-      "size": 3532
+      "sha256": "5eb7cbf1db7af6bd653501c969997b05fe684698b0d8c82a3d98d453f70d1fc4",
+      "size": 3725
     },
     {
       "path": "contacts.html",

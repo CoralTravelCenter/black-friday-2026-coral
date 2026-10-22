@@ -26,8 +26,26 @@ export default async function promotions() {
   const pannels = document.querySelectorAll(".tabs-pannel");
   const registrationButton = document.querySelector("[data-bonus-registration]");
 
+  document.querySelector('.welcome a[href="#promotions"]')?.addEventListener("click", () => {
+    window.ym?.(96674199, "reachGoal", "BF_teaser_button_kv");
+  });
+
+  pannels.forEach((panel, index) => {
+    panel.querySelectorAll(".actions button:not([data-bonus-registration])").forEach((button) => {
+      button.addEventListener("click", () => {
+        const name = buttons[index].textContent.replace(/\s+/g, " ").trim();
+        window.ym?.(96674199, "reachGoal", "BF_teaser_select_promo", {name_promo: name});
+      });
+    });
+  });
+
   registrationButton?.addEventListener("click", () => {
+    window.ym?.(96674199, "reachGoal", "BF_teaser_coralBonus", {button_click: "registration"});
     void requestCardActivation(NEW_CLIENT_PROMO);
+  });
+
+  document.querySelector('.promotions .actions a[href="/coralbonus/club/"]')?.addEventListener("click", () => {
+    window.ym?.(96674199, "reachGoal", "BF_teaser_coralBonus", {button_click: "more"});
   });
   
   function classRemover(elems) {
