@@ -108,4 +108,24 @@
       color: #fff !important;
     }
   }
+  // Match the promotion CTA; scope overrides to the embedded hotel widget.
+  .offre-vue {
+    .controls .region-select ul > li.selected,
+    .offers-list .tour-type button.selected,
+    .offers-list a.do-choose {
+      background: var(--header-footer-color-header-tabs-accent, #1668DC) !important;
+      border-color: var(--header-footer-color-header-tabs-accent, #1668DC) !important;
+      color: #fff !important;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .controls .region-select ul > li.selected:hover,
+      .offers-list .tour-type button.selected:hover,
+      .offers-list a.do-choose:hover {
+        background: var(--header-footer-color-header-tabs-accent, #1668DC) !important;
+        border-color: var(--header-footer-color-header-tabs-accent, #1668DC) !important;
+        filter: brightness(1.1);
+      }
+    }
+  }
 }
