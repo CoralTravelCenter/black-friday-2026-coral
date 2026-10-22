@@ -1,13 +1,1427 @@
 <style>
-.hotels-panel{display:none}.hotels-panel.js-active{display:block}.hotels .offre-vue{color:var(--ant-color-text)}.hotels .controls{display:flex;background:0 0!important}.hotels .controls>:not(.region-select){display:none}.hotels .controls .region-select{width:100%}.hotels .controls .region-select ul{background:#111a20;border-radius:100px}.hotels .controls .region-select ul>li{color:var(--ant-color-text);background:0 0;height:3.4em}.hotels .controls .region-select ul>li:hover{background:var(--diamond-surface-hover)}.hotels .controls .region-select ul>li.selected{color:#fff;background:#4096d0}.hotels .offers-list{color:var(--ant-color-text)}.hotels .offers-list>*{background-color:var(--diamond-surface)!important;border-color:var(--diamond-border)!important;color:var(--ant-color-text)!important}.hotels .offers-list>*>:not(img):not(picture){border-color:var(--diamond-border)!important;background-color:#0000!important}.hotels .offers-list a:not([class*=button]):not([class*=btn]){color:var(--ant-color-text)!important}.hotels .offers-list button{background:var(--diamond-control)!important;border-color:var(--diamond-border)!important;color:var(--ant-color-text)!important}.hotels .offers-list button:hover{background:var(--diamond-surface-hover)!important;color:#fff!important;border-color:#4096d0!important}.hotels .offers-list button[class*=active],.hotels .offers-list button[class*=selected]{color:#fff!important;background:#4096d0!important;border-color:#4096d0!important}.hotels .offers-list [class*=cashback],.hotels .offers-list [class*=cash-back],.hotels .offers-list [class*=bonus]{background:var(--diamond-surface-hover)!important;border-color:var(--diamond-border)!important;color:var(--ant-color-text)!important}.hotels .product-grid>.el-affix{background:0 0!important}.hotels .product-grid>.el-affix button,.hotels .product-grid>.el-affix li,.hotels .product-grid>.el-affix [class*=page]{background:var(--diamond-control)!important;border-color:var(--diamond-border)!important;color:var(--ant-color-text)!important}.hotels .product-grid>.el-affix [class*=active],.hotels .product-grid>.el-affix [aria-current=page]{color:#fff!important;background:#4096d0!important;border-color:#4096d0!important}.hotels .offre-vue .controls .region-select ul>li.selected,.hotels .offre-vue .offers-list .tour-type button.selected,.hotels .offre-vue .offers-list a.do-choose{background:var(--header-footer-color-header-tabs-accent,#1668dc)!important;border-color:var(--header-footer-color-header-tabs-accent,#1668dc)!important;color:#fff!important}@media (hover:hover) and (pointer:fine){.hotels .offre-vue .controls .region-select ul>li.selected:hover,.hotels .offre-vue .offers-list .tour-type button.selected:hover,.hotels .offre-vue .offers-list a.do-choose:hover{filter:brightness(1.1);background:var(--header-footer-color-header-tabs-accent,#1668dc)!important;border-color:var(--header-footer-color-header-tabs-accent,#1668dc)!important}}.product-card .details ul.terms li:before,.location.has-coordinates:before{filter:invert()!important}.product-card .pricing .tour-info .price-discount .price .from-wording{color:#fff!important}
+.hotels-panel{display:none}.hotels-panel.js-active{display:block}.hotels .offre-vue{color:var(--ant-color-text)}.hotels .controls{display:flex;background:0 0!important}.hotels .controls>:not(.region-select){display:none}.hotels .controls .region-select{width:100%}.hotels .controls .region-select ul{background:#111a20;border-radius:100px}.hotels .controls .region-select ul>li{color:var(--ant-color-text);background:0 0;height:3.4em}.hotels .controls .region-select ul>li:hover{background:var(--diamond-surface-hover)}.hotels .controls .region-select ul>li.selected{color:#fff;background:#4096d0}.hotels .offers-list{color:var(--ant-color-text)}.hotels .offers-list>*{background-color:var(--diamond-surface)!important;border-color:var(--diamond-border)!important;color:var(--ant-color-text)!important}.hotels .offers-list>*>:not(img):not(picture){border-color:var(--diamond-border)!important;background-color:#0000!important}.hotels .offers-list a:not([class*=button]):not([class*=btn]){color:var(--ant-color-text)!important}.hotels .offers-list button{background:var(--diamond-control)!important;border-color:var(--diamond-border)!important;color:var(--ant-color-text)!important}.hotels .offers-list button:hover{background:var(--diamond-surface-hover)!important;color:#fff!important;border-color:#4096d0!important}.hotels .offers-list button[class*=active],.hotels .offers-list button[class*=selected]{color:#fff!important;background:#4096d0!important;border-color:#4096d0!important}.hotels .offers-list [class*=cashback],.hotels .offers-list [class*=cash-back],.hotels .offers-list [class*=bonus]{background:var(--diamond-surface-hover)!important;border-color:var(--diamond-border)!important;color:var(--ant-color-text)!important}.hotels .product-grid>.el-affix{background:0 0!important}.hotels .product-grid>.el-affix button,.hotels .product-grid>.el-affix li,.hotels .product-grid>.el-affix [class*=page]{background:var(--diamond-control)!important;border-color:var(--diamond-border)!important;color:var(--ant-color-text)!important}.hotels .product-grid>.el-affix [class*=active],.hotels .product-grid>.el-affix [aria-current=page]{color:#fff!important;background:#4096d0!important;border-color:#4096d0!important}.hotels .offre-vue .controls .region-select ul>li.selected,.hotels .offre-vue .offers-list .tour-type button.selected,.hotels .offre-vue .offers-list a.do-choose{background:var(--header-footer-color-header-tabs-accent,#1668dc)!important;border-color:var(--header-footer-color-header-tabs-accent,#1668dc)!important;color:#fff!important}@media (hover:hover) and (pointer:fine){.hotels .offre-vue .controls .region-select ul>li.selected:hover,.hotels .offre-vue .offers-list .tour-type button.selected:hover,.hotels .offre-vue .offers-list a.do-choose:hover{filter:brightness(1.1);background:var(--header-footer-color-header-tabs-accent,#1668dc)!important;border-color:var(--header-footer-color-header-tabs-accent,#1668dc)!important}}.product-card .details ul.terms li:before,.location.has-coordinates:before{filter:invert()!important}.product-card .pricing .tour-info .price-discount .price .from-wording{color:#fff!important}.offre-vue .controls{display:flex!important}
 </style>
 
-<section class="corallium hotels">
-    <div class="hotels-panel js-active" data-hotels-panel="escape-autumn">1</div>
-    <div class="hotels-panel" data-hotels-panel="save-on-hotel">2</div>
-    <div class="hotels-panel" data-hotels-panel="celebrate-new-year">3</div>
-    <div class="hotels-panel" data-hotels-panel="warm-up-in-winter">4</div>
-    <div class="hotels-panel" data-hotels-panel="plan-summer">5</div>
+<section class="corallium hotels" id="hotels-set">
+    <div class="hotels-panel js-active" data-hotels-panel="escape-autumn">
+        <script type="application/json" data-offre-vue="">
+            {
+                "options": {
+                    "chartersOnly": true,
+                    "groupBy": "countries",
+                    "nights": [6, 7, 10, 11, 12, 13],
+                    "timeframe": {
+                        "fixed": ["2026-10-01", "2026-12-20"],
+                        "monthly": true
+                    },
+                    "wildcardOption": "Все отели",
+                    "preferRegion": "Турция",
+                    "sortBy": "price"
+                },
+                "hotels": [853, 768, 682, 26682, 21627, 25372, 29657, 4407, 365, 21213, 17750, 5205, 17668, 52819, 27124, 14262, 21888, 8264, 17747, 34184, 3923, 9965, 19936, 10796, 195, 96, 101, 11612, 3928, 29367, 119, 50799, 13318, 7601, 135, 3743, 94, 13279, 196, 64951, 9842, 2039, 50487, 2066, 2055, 22401, 2133, 9765, 9388, 25536, 6454, 2121, 2152, 23220, 24797, 2085, 2039, 31665, 4762, 9416, 11493, 56739, 1090, 27925, 2195, 55798, 2369, 9534, 2360, 29134, 40110, 49418, 1225, 1665, 28823, 1681, 1706, 26961, 22438, 1696, 30343, 21450, 27188, 23655, 28145, 20800, 30837, 29602, 27568, 31617, 82938,
+                    8634,
+                    82965,
+                    56784,
+                    7296,
+                    3459,
+                    56779,
+                    3520,
+                    82967,
+                    3477,
+                    56755,
+                    56785,
+                    20762,
+                    3480,
+                    3543,
+                    1237,
+                    82963, 23786, 36294, 31452, 23513, 7454, 1918, 81267, 51301, 81287, 50437, 81284, 59777, 571, 2564, 27144, 16891, 5645, 5721, 29795
+                ]
+            }
+        </script>
+    </div>
+    <div class="hotels-panel" data-hotels-panel="save-on-hotel">
+        <script type="application/json" data-offre-vue="">
+            {
+                "options": {
+                    "chartersOnly": false,
+                    "groupBy": "countries",
+                    "nights": [6, 7, 8, 9, 10, 11, 12, 13],
+                    "timeframe": {
+                        "fixed": ["2026-10-01", "2026-12-20"],
+                        "monthly": true
+                    },
+                    "wildcardOption": "Все отели",
+                    "preferRegion": "Турция",
+                    "pricing": "per-person",
+                    "sortBy": "source"
+                },
+                "hotels": [{
+                    "id": 3815,
+                    "onlyhotel": true
+                }, {
+                    "id": 21601,
+                    "onlyhotel": true
+                }, {
+                    "id": 12880,
+                    "onlyhotel": true
+                }, {
+                    "id": 983,
+                    "onlyhotel": true
+                }, {
+                    "id": 52523,
+                    "onlyhotel": true
+                }, {
+                    "id": 16396,
+                    "onlyhotel": true
+                }, {
+                    "id": 358,
+                    "onlyhotel": true
+                }, {
+                    "id": 25495,
+                    "onlyhotel": true
+                }, {
+                    "id": 799,
+                    "onlyhotel": true
+                }, {
+                    "id": 4233,
+                    "onlyhotel": true
+                }, {
+                    "id": 50385,
+                    "onlyhotel": true
+                }, {
+                    "id": 6936,
+                    "onlyhotel": true
+                }, {
+                    "id": 30897,
+                    "onlyhotel": true
+                }, {
+                    "id": 5174,
+                    "onlyhotel": true
+                }, {
+                    "id": 15254,
+                    "onlyhotel": true
+                }, {
+                    "id": 6659,
+                    "onlyhotel": true
+                }, {
+                    "id": 52524,
+                    "onlyhotel": true
+                }, {
+                    "id": 16482,
+                    "onlyhotel": true
+                }, {
+                    "id": 30303,
+                    "onlyhotel": true
+                }, {
+                    "id": 9910,
+                    "onlyhotel": true
+                }, {
+                    "id": 682,
+                    "onlyhotel": true
+                }, {
+                    "id": 11051,
+                    "onlyhotel": true
+                }, {
+                    "id": 949,
+                    "onlyhotel": true
+                }, {
+                    "id": 656,
+                    "onlyhotel": true
+                }, {
+                    "id": 311,
+                    "onlyhotel": true
+                }, {
+                    "id": 35893,
+                    "onlyhotel": true
+                }, {
+                    "id": 2152,
+                    "onlyhotel": true
+                }, {
+                    "id": 9833,
+                    "onlyhotel": true
+                }, {
+                    "id": 2039,
+                    "onlyhotel": true
+                }, {
+                    "id": 4762,
+                    "onlyhotel": true
+                }, {
+                    "id": 50487,
+                    "onlyhotel": true
+                }, {
+                    "id": 15670,
+                    "onlyhotel": true
+                }, {
+                    "id": 13480,
+                    "onlyhotel": true
+                }, {
+                    "id": 16586,
+                    "onlyhotel": true
+                }, {
+                    "id": 9824,
+                    "onlyhotel": true
+                }, {
+                    "id": 2133,
+                    "onlyhotel": true
+                }, {
+                    "id": 50931,
+                    "onlyhotel": true
+                }, {
+                    "id": 1997,
+                    "onlyhotel": true
+                }, {
+                    "id": 57972,
+                    "onlyhotel": true
+                }, {
+                    "id": 2081,
+                    "onlyhotel": true
+                }, {
+                    "id": 9771,
+                    "onlyhotel": true
+                }, {
+                    "id": 9765,
+                    "onlyhotel": true
+                }, {
+                    "id": 9388,
+                    "onlyhotel": true
+                }, {
+                    "id": 35301,
+                    "onlyhotel": true
+                }, {
+                    "id": 23220,
+                    "onlyhotel": true
+                }, {
+                    "id": 8096,
+                    "onlyhotel": true
+                }, {
+                    "id": 1984,
+                    "onlyhotel": true
+                }, {
+                    "id": 2007,
+                    "onlyhotel": true
+                }, {
+                    "id": 4351,
+                    "onlyhotel": true
+                }, {
+                    "id": 16377,
+                    "onlyhotel": true
+                }, {
+                    "id": 2078,
+                    "onlyhotel": true
+                }, {
+                    "id": 22401,
+                    "onlyhotel": true
+                }, {
+                    "id": 2466,
+                    "onlyhotel": true
+                }, {
+                    "id": 9534,
+                    "onlyhotel": true
+                }, {
+                    "id": 2507,
+                    "onlyhotel": true
+                }, {
+                    "id": 2425,
+                    "onlyhotel": true
+                }, {
+                    "id": 2357,
+                    "onlyhotel": true
+                }, {
+                    "id": 2481,
+                    "onlyhotel": true
+                }, {
+                    "id": 29735,
+                    "onlyhotel": true
+                }, {
+                    "id": 2264,
+                    "onlyhotel": true
+                }, {
+                    "id": 26464,
+                    "onlyhotel": true
+                }, {
+                    "id": 2315,
+                    "onlyhotel": true
+                }, {
+                    "id": 9358,
+                    "onlyhotel": true
+                }, {
+                    "id": 16144,
+                    "onlyhotel": true
+                }, {
+                    "id": 5721,
+                    "onlyhotel": true
+                }, {
+                    "id": 52582,
+                    "onlyhotel": true
+                }, {
+                    "id": 48318,
+                    "onlyhotel": true
+                }, {
+                    "id": 31007,
+                    "onlyhotel": true
+                }, {
+                    "id": 31151,
+                    "onlyhotel": true
+                }, {
+                    "id": 2378,
+                    "onlyhotel": true
+                }, {
+                    "id": 22942,
+                    "onlyhotel": true
+                }, {
+                    "id": 2288,
+                    "onlyhotel": true
+                }, {
+                    "id": 25742,
+                    "onlyhotel": true
+                }, {
+                    "id": 29975,
+                    "onlyhotel": true
+                }, {
+                    "id": 4012,
+                    "onlyhotel": true
+                }, {
+                    "id": 1095,
+                    "onlyhotel": true
+                }, {
+                    "id": 30479,
+                    "onlyhotel": true
+                }, {
+                    "id": 2369,
+                    "onlyhotel": true
+                }, {
+                    "id": 78,
+                    "onlyhotel": true
+                }, {
+                    "id": 33392,
+                    "onlyhotel": true
+                }, {
+                    "id": 13320,
+                    "onlyhotel": true
+                }, {
+                    "id": 13318,
+                    "onlyhotel": true
+                }, {
+                    "id": 13319,
+                    "onlyhotel": true
+                }, {
+                    "id": 3939,
+                    "onlyhotel": true
+                }, {
+                    "id": 3752,
+                    "onlyhotel": true
+                }, {
+                    "id": 9270,
+                    "onlyhotel": true
+                }, {
+                    "id": 31,
+                    "onlyhotel": true
+                }, {
+                    "id": 32,
+                    "onlyhotel": true
+                }, {
+                    "id": 19937,
+                    "onlyhotel": true
+                }, {
+                    "id": 7568,
+                    "onlyhotel": true
+                }, {
+                    "id": 3744,
+                    "onlyhotel": true
+                }, {
+                    "id": 58466,
+                    "onlyhotel": true
+                }, {
+                    "id": 9965,
+                    "onlyhotel": true
+                }, {
+                    "id": 4085,
+                    "onlyhotel": true
+                }, {
+                    "id": 191,
+                    "onlyhotel": true
+                }, {
+                    "id": 50799,
+                    "onlyhotel": true
+                }, {
+                    "id": 192,
+                    "onlyhotel": true
+                }, {
+                    "id": 193,
+                    "onlyhotel": true
+                }, {
+                    "id": 3913,
+                    "onlyhotel": true
+                }, {
+                    "id": 58,
+                    "onlyhotel": true
+                }, {
+                    "id": 74242,
+                    "onlyhotel": true
+                }, {
+                    "id": 9008,
+                    "onlyhotel": true
+                }, {
+                    "id": 22934,
+                    "onlyhotel": true
+                }, {
+                    "id": 27938,
+                    "onlyhotel": true
+                }, {
+                    "id": 76,
+                    "onlyhotel": true
+                }, {
+                    "id": 79,
+                    "onlyhotel": true
+                }, {
+                    "id": 3754,
+                    "onlyhotel": true
+                }, {
+                    "id": 35661,
+                    "onlyhotel": true
+                }, {
+                    "id": 143,
+                    "onlyhotel": true
+                }, {
+                    "id": 4087,
+                    "onlyhotel": true
+                }, {
+                    "id": 1681,
+                    "onlyhotel": true
+                }, {
+                    "id": 1706,
+                    "onlyhotel": true
+                }, {
+                    "id": 26961,
+                    "onlyhotel": true
+                }, {
+                    "id": 22438,
+                    "onlyhotel": true
+                }, {
+                    "id": 1696,
+                    "onlyhotel": true
+                }, {
+                    "id": 1682,
+                    "onlyhotel": true
+                }, {
+                    "id": 29701,
+                    "onlyhotel": true
+                }, {
+                    "id": 1668,
+                    "onlyhotel": true
+                }, {
+                    "id": 16492,
+                    "onlyhotel": true
+                }, {
+                    "id": 1695,
+                    "onlyhotel": true
+                }, {
+                    "id": 28690,
+                    "onlyhotel": true
+                }, {
+                    "id": 28364,
+                    "onlyhotel": true
+                }, {
+                    "id": 1684,
+                    "onlyhotel": true
+                }, {
+                    "id": 1718,
+                    "onlyhotel": true
+                }, {
+                    "id": 24710,
+                    "onlyhotel": true
+                }, {
+                    "id": 40140,
+                    "onlyhotel": true
+                }, {
+                    "id": 49414,
+                    "onlyhotel": true
+                }, {
+                    "id": 36487,
+                    "onlyhotel": true
+                }, {
+                    "id": 22404,
+                    "onlyhotel": true
+                }, {
+                    "id": 20185,
+                    "onlyhotel": true
+                }, {
+                    "id": 3402,
+                    "onlyhotel": true
+                }, {
+                    "id": 3424,
+                    "onlyhotel": true
+                }, {
+                    "id": 3431,
+                    "onlyhotel": true
+                }, {
+                    "id": 15808,
+                    "onlyhotel": true
+                }, {
+                    "id": 15795,
+                    "onlyhotel": true
+                }, {
+                    "id": 3395,
+                    "onlyhotel": true
+                }, {
+                    "id": 20209,
+                    "onlyhotel": true
+                }, {
+                    "id": 15555,
+                    "onlyhotel": true
+                }, {
+                    "id": 20279,
+                    "onlyhotel": true
+                }, {
+                    "id": 22770,
+                    "onlyhotel": true
+                }, {
+                    "id": 7095,
+                    "onlyhotel": true
+                }, {
+                    "id": 7344,
+                    "onlyhotel": true
+                }, {
+                    "id": 26169,
+                    "onlyhotel": true
+                }, {
+                    "id": 28911,
+                    "onlyhotel": true
+                }, {
+                    "id": 3410,
+                    "onlyhotel": true
+                }, {
+                    "id": 6897,
+                    "onlyhotel": true
+                }, {
+                    "id": 9798,
+                    "onlyhotel": true
+                }, {
+                    "id": 15120,
+                    "onlyhotel": true
+                }, {
+                    "id": 3397,
+                    "onlyhotel": true
+                }, {
+                    "id": 3404,
+                    "onlyhotel": true
+                }, {
+                    "id": 27073,
+                    "onlyhotel": true
+                }, {
+                    "id": 25496,
+                    "onlyhotel": true
+                }, {
+                    "id": 30343,
+                    "onlyhotel": true
+                }, {
+                    "id": 21450,
+                    "onlyhotel": true
+                }, {
+                    "id": 27188,
+                    "onlyhotel": true
+                }, {
+                    "id": 23655,
+                    "onlyhotel": true
+                }, {
+                    "id": 28145,
+                    "onlyhotel": true
+                }, {
+                    "id": 31719,
+                    "onlyhotel": true
+                }, {
+                    "id": 20800,
+                    "onlyhotel": true
+                }, {
+                    "id": 30837,
+                    "onlyhotel": true
+                }, {
+                    "id": 29602,
+                    "onlyhotel": true
+                }, {
+                    "id": 27077,
+                    "onlyhotel": true
+                }, {
+                    "id": 23360,
+                    "onlyhotel": true
+                }, {
+                    "id": 30582,
+                    "onlyhotel": true
+                }, {
+                    "id": 27568,
+                    "onlyhotel": true
+                }, {
+                    "id": 31617,
+                    "onlyhotel": true
+                }, {
+                    "id": 24618,
+                    "onlyhotel": true
+                }, {
+                    "id": 11417,
+                    "onlyhotel": true
+                }, {
+                    "id": 10604,
+                    "onlyhotel": true
+                }, {
+                    "id": 21820,
+                    "onlyhotel": true
+                }, {
+                    "id": 50327,
+                    "onlyhotel": true
+                }, {
+                    "id": 11217,
+                    "onlyhotel": true
+                }, {
+                    "id": 11544,
+                    "onlyhotel": true
+                }, {
+                    "id": 34361,
+                    "onlyhotel": true
+                }, {
+                    "id": 29286,
+                    "onlyhotel": true
+                }, {
+                    "id": 11034,
+                    "onlyhotel": true
+                }, {
+                    "id": 10574,
+                    "onlyhotel": true
+                }, {
+                    "id": 11543,
+                    "onlyhotel": true
+                }, {
+                    "id": 11548,
+                    "onlyhotel": true
+                }, {
+                    "id": 63908,
+                    "onlyhotel": true
+                }, {
+                    "id": 36573,
+                    "onlyhotel": true
+                }, {
+                    "id": 34577,
+                    "onlyhotel": true
+                }, {
+                    "id": 35414,
+                    "onlyhotel": true
+                }, {
+                    "id": 49794,
+                    "onlyhotel": true
+                }, {
+                    "id": 29193,
+                    "onlyhotel": true
+                }, {
+                    "id": 35891,
+                    "onlyhotel": true
+                }, {
+                    "id": 50271,
+                    "onlyhotel": true
+                }, {
+                    "id": 24953,
+                    "onlyhotel": true
+                }, {
+                    "id": 58341,
+                    "onlyhotel": true
+                }, {
+                    "id": 10553,
+                    "onlyhotel": true
+                }, {
+                    "id": 64087,
+                    "onlyhotel": true
+                }, {
+                    "id": 13876,
+                    "onlyhotel": true
+                }, {
+                    "id": 50198,
+                    "onlyhotel": true
+                }, {
+                    "id": 28215,
+                    "onlyhotel": true
+                }, {
+                    "id": 13246,
+                    "onlyhotel": true
+                }, {
+                    "id": 52894,
+                    "onlyhotel": true
+                }, {
+                    "id": 52598,
+                    "onlyhotel": true
+                }, {
+                    "id": 19062,
+                    "onlyhotel": true
+                }, {
+                    "id": 36008,
+                    "onlyhotel": true
+                }, {
+                    "id": 63239,
+                    "onlyhotel": true
+                }, {
+                    "id": 52610,
+                    "onlyhotel": true
+                }, {
+                    "id": 34464,
+                    "onlyhotel": true
+                }, {
+                    "id": 17408,
+                    "onlyhotel": true
+                }, {
+                    "id": 28275,
+                    "onlyhotel": true
+                }, {
+                    "id": 17814,
+                    "onlyhotel": true
+                }, {
+                    "id": 28323,
+                    "onlyhotel": true
+                }, {
+                    "id": 63293,
+                    "onlyhotel": true
+                }, {
+                    "id": 22116,
+                    "onlyhotel": true
+                }, {
+                    "id": 27708,
+                    "onlyhotel": true
+                }, {
+                    "id": 48029,
+                    "onlyhotel": true
+                }, {
+                    "id": 22127,
+                    "onlyhotel": true
+                }, {
+                    "id": 6936,
+                    "onlyhotel": true
+                }, {
+                    "id": 30897,
+                    "onlyhotel": true
+                }, {
+                    "id": 5174,
+                    "onlyhotel": true
+                }, {
+                    "id": 15254,
+                    "onlyhotel": true
+                }, {
+                    "id": 6659,
+                    "onlyhotel": true
+                }, {
+                    "id": 52524,
+                    "onlyhotel": true
+                }, {
+                    "id": 16482,
+                    "onlyhotel": true
+                }, {
+                    "id": 30303,
+                    "onlyhotel": true
+                }, {
+                    "id": 9910,
+                    "onlyhotel": true
+                }, {
+                    "id": 682,
+                    "onlyhotel": true
+                }, {
+                    "id": 11051,
+                    "onlyhotel": true
+                }, {
+                    "id": 949,
+                    "onlyhotel": true
+                }, {
+                    "id": 656,
+                    "onlyhotel": true
+                }, {
+                    "id": 311,
+                    "onlyhotel": true
+                }, {
+                    "id": 982,
+                    "onlyhotel": true
+                }, {
+                    "id": 9623,
+                    "onlyhotel": true
+                }, {
+                    "id": 575,
+                    "onlyhotel": true
+                }, {
+                    "id": 875,
+                    "onlyhotel": true
+                }, {
+                    "id": 4305,
+                    "onlyhotel": true
+                }, {
+                    "id": 628,
+                    "onlyhotel": true
+                }, {
+                    "id": 22140,
+                    "onlyhotel": true
+                }, {
+                    "id": 21183,
+                    "onlyhotel": true
+                }, {
+                    "id": 948,
+                    "onlyhotel": true
+                }, {
+                    "id": 11013,
+                    "onlyhotel": true
+                }, {
+                    "id": 30533,
+                    "onlyhotel": true
+                }, {
+                    "id": 21601,
+                    "onlyhotel": true
+                }, {
+                    "id": 56305,
+                    "onlyhotel": true
+                }, {
+                    "id": 8232,
+                    "onlyhotel": true
+                }, {
+                    "id": 934,
+                    "onlyhotel": true
+                }, {
+                    "id": 21627,
+                    "onlyhotel": true
+                }, {
+                    "id": 9911,
+                    "onlyhotel": true
+                }, {
+                    "id": 33799,
+                    "onlyhotel": true
+                }, {
+                    "id": 1253,
+                    "onlyhotel": true
+                }, {
+                    "id": 10105,
+                    "onlyhotel": true
+                }, {
+                    "id": 874,
+                    "onlyhotel": true
+                }, {
+                    "id": 10225,
+                    "onlyhotel": true
+                }, {
+                    "id": 26682,
+                    "onlyhotel": true
+                }, {
+                    "id": 9897,
+                    "onlyhotel": true
+                }, {
+                    "id": 58202,
+                    "onlyhotel": true
+                }, {
+                    "id": 47527,
+                    "onlyhotel": true
+                }, {
+                    "id": 734,
+                    "onlyhotel": true
+                }, {
+                    "id": 751,
+                    "onlyhotel": true
+                }, {
+                    "id": 50544,
+                    "onlyhotel": true
+                }, {
+                    "id": 82938,
+                    "onlyhotel": true
+                },
+                    {
+                        "id": 8634,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 82965,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 56784,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 7296,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 3459,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 56779,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 3520,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 82967,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 3477,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 56755,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 56785,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 20762,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 3480,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 3543,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 1237,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 82963,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 56753,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 7224,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 56759,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 82939,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 56756,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 3489,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 82964,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 56768,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 3521,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 7223,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 56763,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 3491,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 4271,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 7297,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 73891,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 3487,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 3540,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 73904,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 27507,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 83128,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 56757,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 3505,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 3455,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 59192,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 59171,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 58968,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 53219,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 59078,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 3533,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 9215,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 53185,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 7294,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 83286,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 53269,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 83292,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 83309,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 83290,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 53382,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 59221,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 53175,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 59136,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 3492,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 83288,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 83295,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 83305,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 55857,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 83311,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 58952,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 58966,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 55848,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 83303,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 59177,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 59029,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 73879,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 73874,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 73878,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 56788,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 56752,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 73888,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 83164,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 3516,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 3510,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 56771,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 3493,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 9434,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 27317,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 73865,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 56759,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 81742,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 7967,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 7945,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 9426,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 27514,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 83478,
+                        "onlyhotel": true
+                    },
+                    {
+                        "id": 83490,
+                        "onlyhotel": true
+                    }
+                ]
+            }
+        </script>
+    </div>
+    <div class="hotels-panel" data-hotels-panel="celebrate-new-year">
+        <script type="application/json" data-offre-vue="">
+            {
+                "options": {
+                    "chartersOnly": false,
+                    "groupBy": "countries",
+                    "nights": [7],
+                    "timeframe": {
+                        "fixed": ["2026-12-28", "2027-01-03"]
+                    },
+                    "wildcardOption": "Все отели",
+                    "preferRegion": "Турция",
+
+                    "sortBy": "price"
+                },
+                "hotels": [9534, 2393, 2549, 18139, 982, 9910, 51097, 1918, 1855, 187, 3923, 78, 2060, 2152, 9765, 46962,
+                    10578,
+                    11474,
+                    11304,
+                    78352
+                ]
+            }
+        </script>
+    </div>
+    <div class="hotels-panel" data-hotels-panel="warm-up-in-winter">
+        <script type="application/json" data-offre-vue="">
+            {
+                "options": {
+                    "chartersOnly": false,
+                    "groupBy": "countries",
+                    "nights": [6, 7, 8, 9, 10, 11, 12, 13],
+                    "timeframe": {
+                        "fixed": ["2026-11-01", "2027-03-31"],
+                        "monthly": true
+                    },
+                    "wildcardOption": "Все отели",
+                    "preferRegion": "Турция",
+                    "sortBy": "price"
+                },
+                "hotels": [43371, 25536, 10312, 8230, 9710, 9765, 24797, 51997, 1039, 6454, 31763, 25153, 29719, 22401, 2121, 18317, 1041, 9416, 2160, 23220, 26087, 9842, 35893, 50487, 2152, 16377, 31665, 2039, 23228, 2078, 2060, 9833, 2066, 2018, 29797, 2085, 2133, 4762, 2132, 15670, 78, 9270, 19937, 192, 74242, 22934, 27938, 56650, 4082, 80, 153, 23179, 27270, 184, 19940, 19941, 90, 19938, 94, 11020, 181, 84, 54983, 50000, 29816, 3936, 189, 30371, 4078, 46903, 54606, 195, 14989, 6259, 49757, 33392, 13320, 13318, 13319, 3752, 26465, 32, 7568, 3745, 6248, 9965, 4085, 6486, 47, 50799, 57, 60, 9008, 50661, 96, 107, 3753, 110, 50809, 10796, 142, 3930, 125, 126, 101, 31048, 22827, 114, 16028, 19943, 132, 133, 135, 64951, 62, 6255, 140, 34314, 24733, 3912, 3928, 8426, 122, 3924, 54272, 6256, 35251, 6257, 7427, 51012, 15577, 138, 28978, 23557, 26681, 33994, 1965, 27640, 23201, 36334, 27147, 52226, 72810, 31474, 11814, 23786, 23484, 54592, 30661, 36294, 25971, 63268, 8209, 23443, 26606, 7359, 31468, 36521, 36345, 1941, 13294, 24077, 13369, 24915, 23209, 23372, 2195, 13708, 7257, 8218, 63053, 57070, 12396, 29403, 2288, 25742, 30479, 29611, 2369, 29860, 2385, 72728, 23402, 19503, 54399, 4855, 2421, 2437, 21765, 26948, 4027, 19003, 2531, 6485, 21764, 11214, 2549, 10780, 58376, 5726, 25463, 51116, 31196, 29134, 30617, 12728, 10341, 21444, 947, 21191, 15815, 3815, 55032, 520, 11013, 21601, 8028, 874, 54629, 6651, 761, 28155, 11051, 547, 29554, 545, 679, 18408, 73502, 20518, 58628, 15367, 10197, 64601, 8588, 8590, 3967, 6536, 49865, 980, 682, 52520, 52522, 27570, 565, 34337, 10105, 56305, 33418, 58251, 6980, 73894, 29836, 52523, 356, 799, 4233, 698, 801, 47309, 363, 563, 364, 6936, 27902, 50277, 645, 4239, 8213, 1131, 365, 4883, 4884, 4473, 6982, 8263, 8264, 4846, 4546, 17668, 4260, 5207]
+            }
+        </script>
+    </div>
+    <div class="hotels-panel" data-hotels-panel="plan-summer">
+        <script type="application/json" data-offre-vue="">
+            {
+                "options": {
+                    "chartersOnly": true,
+                    "groupBy": "countries",
+                    "nights": [7, 8, 9],
+                    "timeframe": {
+                        "fixed": ["2027-04-01", "2027-11-30"],
+                        "monthly": true
+                    },
+                    "wildcardOption": "Все отели",
+                    "preferRegion": "Турция",
+                    "sortBy": "price"
+                },
+                "hotels": [30617, 12728, 10341, 18643, 21444, 947, 21191, 81616, 15815, 31423, 8352, 588, 13570, 3815, 55032, 520, 11013, 21601, 78308, 8028, 874, 54629, 6651, 761, 28155, 11051, 547, 29554, 545, 679, 18408, 73502, 20518, 58628, 15367, 10197, 64601, 8588, 8590, 3967, 6536, 49865, 980, 682, {
+                    "id": 23948,
+                    "onlyhotel": true
+                }, {
+                    "id": 13320,
+                    "onlyhotel": true
+                }, {
+                    "id": 17956,
+                    "onlyhotel": true
+                }, {
+                    "id": 7397,
+                    "onlyhotel": true
+                }, {
+                    "id": 10408,
+                    "onlyhotel": true
+                }, {
+                    "id": 9078,
+                    "onlyhotel": true
+                }, {
+                    "id": 89,
+                    "onlyhotel": true
+                }, {
+                    "id": 74242,
+                    "onlyhotel": true
+                }, {
+                    "id": 5609,
+                    "onlyhotel": true
+                }, {
+                    "id": 9008,
+                    "onlyhotel": true
+                }, {
+                    "id": 3916,
+                    "onlyhotel": true
+                }, {
+                    "id": 11021,
+                    "onlyhotel": true
+                }, {
+                    "id": 50000,
+                    "onlyhotel": true
+                }, {
+                    "id": 196,
+                    "onlyhotel": true
+                }, {
+                    "id": 36111,
+                    "onlyhotel": true
+                }, {
+                    "id": 82118,
+                    "onlyhotel": true
+                }, {
+                    "id": 17940,
+                    "onlyhotel": true
+                }, {
+                    "id": 28415,
+                    "onlyhotel": true
+                }, {
+                    "id": 13318,
+                    "onlyhotel": true
+                }, {
+                    "id": 94,
+                    "onlyhotel": true
+                }, {
+                    "id": 17974,
+                    "onlyhotel": true
+                }, {
+                    "id": 76467,
+                    "onlyhotel": true
+                }, {
+                    "id": 27296,
+                    "onlyhotel": true
+                }, {
+                    "id": 78607,
+                    "onlyhotel": true
+                }, {
+                    "id": 49757,
+                    "onlyhotel": true
+                }, {
+                    "id": 16377,
+                    "onlyhotel": true
+                }, {
+                    "id": 77079,
+                    "onlyhotel": true
+                }, {
+                    "id": 47358,
+                    "onlyhotel": true
+                }, {
+                    "id": 2160,
+                    "onlyhotel": true
+                }, {
+                    "id": 42957,
+                    "onlyhotel": true
+                }, {
+                    "id": 77839,
+                    "onlyhotel": true
+                }, {
+                    "id": 35301,
+                    "onlyhotel": true
+                }, {
+                    "id": 2079,
+                    "onlyhotel": true
+                }, {
+                    "id": 19069,
+                    "onlyhotel": true
+                }, {
+                    "id": 9385,
+                    "onlyhotel": true
+                }, {
+                    "id": 68961,
+                    "onlyhotel": true
+                }, {
+                    "id": 9416,
+                    "onlyhotel": true
+                }, {
+                    "id": 31051,
+                    "onlyhotel": true
+                }, {
+                    "id": 10350,
+                    "onlyhotel": true
+                }, {
+                    "id": 30346,
+                    "onlyhotel": true
+                }, {
+                    "id": 29736,
+                    "onlyhotel": true
+                }, {
+                    "id": 20459,
+                    "onlyhotel": true
+                }, {
+                    "id": 36271,
+                    "onlyhotel": true
+                }, {
+                    "id": 29774,
+                    "onlyhotel": true
+                }, {
+                    "id": 58029,
+                    "onlyhotel": true
+                }, {
+                    "id": 5874,
+                    "onlyhotel": true
+                }, {
+                    "id": 54733,
+                    "onlyhotel": true
+                }, {
+                    "id": 2378,
+                    "onlyhotel": true
+                }, {
+                    "id": 8218,
+                    "onlyhotel": true
+                }, {
+                    "id": 27282,
+                    "onlyhotel": true
+                }, {
+                    "id": 26948,
+                    "onlyhotel": true
+                }, {
+                    "id": 2456,
+                    "onlyhotel": true
+                }, {
+                    "id": 2259,
+                    "onlyhotel": true
+                }, {
+                    "id": 1092,
+                    "onlyhotel": true
+                }, {
+                    "id": 2200,
+                    "onlyhotel": true
+                }, {
+                    "id": 46809,
+                    "onlyhotel": true
+                }, {
+                    "id": 58007,
+                    "onlyhotel": true
+                }]
+            }
+        </script>
+    </div>
 </section>
 
 <script>
