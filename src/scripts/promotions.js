@@ -31,7 +31,7 @@ export default async function promotions() {
   });
 
   pannels.forEach((panel, index) => {
-    panel.querySelectorAll(".actions button:not([data-bonus-registration])").forEach((button) => {
+    panel.querySelectorAll(".actions a:not([data-bonus-registration])").forEach((button) => {
       button.addEventListener("click", () => {
         const name = buttons[index].textContent.replace(/\s+/g, " ").trim();
         window.ym?.(96674199, "reachGoal", "BF_teaser_select_promo", {name_promo: name});
